@@ -99,10 +99,10 @@ class Game:
                     losecount += 1
 
                 #Game stats 
-                print(f"\nGame count: {gamecount}")
-                print(f"Win count: {wincount}")
-                print(f"Tie count: {tiecount}")
-                print(f"Lose count: {losecount}")
+            print(f"\nGame count: {gamecount}")
+            print(f"Win count: {wincount}")
+            print(f"Tie count: {tiecount}")
+            print(f"Lose count: {losecount}")
 
 
 if __name__ == "__main__":
