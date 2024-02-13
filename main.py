@@ -77,15 +77,13 @@ class Game:
                     wincount += 1
 
                 elif dice >= 3 and player.choice == "Paper":
-                    print("You pushed the paper into the gun and !")
+                    print("You pushed the paper into the gun and survived!")
                     wincount += 1
 
                 else:
                     print("You died! Better luck next time.")
                     losecount += 1
                     death = True
-
-                break
 
             elif player.choice == self.switch[computer.choice]:
                 print("You win!")
