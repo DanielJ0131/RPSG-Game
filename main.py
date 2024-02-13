@@ -90,12 +90,10 @@ class Game:
             elif player.choice == self.switch[computer.choice]:
                 print("You win!")
                 wincount += 1
-                break
 
             else:
                 print("You lost!")
                 losecount += 1
-                break
 
         print(f"\nGame count: {gamecount}")
         print(f"Win count: {wincount}")
