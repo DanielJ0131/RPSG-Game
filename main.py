@@ -1,4 +1,4 @@
-"""This is the main file for the Rock, Paper, Scissors, Gun game"""
+"""This is the main file for the Rock, Paper, Scissors, Gun Game"""
 import random
 import time
 
@@ -44,11 +44,14 @@ class Game:
             print(f"Computer chose: {computer.choice}!")
             time.sleep(1)
 
+            # Game Logic #
+            # If the player and computer chose the same thing, it's a tie.
             if player.choice == computer.choice:
                 print("It's a tie!")
                 tiecount += 1
                 break
 
+            # If the computer chose gun, the player has to roll the dice.
             elif computer.choice == "Gun":
                 print("The computer chose gun!" +
                       "Roll the dice to see if you survive! ")
@@ -85,14 +88,17 @@ class Game:
                     losecount += 1
                     death = True
 
+            # If the player chose the winning choice, they win.
             elif player.choice == self.switch[computer.choice]:
                 print("You win!")
                 wincount += 1
 
+            # If the player chose the losing choice, they lose.
             else:
                 print("You lost!")
                 losecount += 1
 
+        # Game Stats #
         print(f"\nGame count: {gamecount}")
         print(f"Win count: {wincount}")
         print(f"Tie count: {tiecount}")
