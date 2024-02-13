@@ -1,4 +1,6 @@
 """This is the main file for the Rock, Paper, Scissors, Gun Game"""
+
+""" I have fixed the code from bug, märker också att det är andra konstigheter med koden som Gamestats dycker upp hela tiden i Terminalen när det är en tie, men annars jätte bra skriven kod //Chris """
 import random
 import time
 
@@ -29,15 +31,13 @@ class Game:
 
     def play(self):
         """Play the game"""
-        death = False
-
+    while True:
         gamecount = 0
         wincount = 0
         tiecount = 0
         losecount = 0
 
-        while death is not True:
-
+        while True:
             gamecount += 1
             player = Player()
             computer = Computer()
