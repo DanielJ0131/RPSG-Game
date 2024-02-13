@@ -87,16 +87,16 @@ class Game:
                     else:
                         print("You died! Better luck next time.")
                         losecount += 1
-                        death = True
+                        death = True  #Has no conection to anything
 
             # If the player chose the winning choice, they win.
                 elif player.choice == self.switch[computer.choice]:
-                    print("You win!")
+                    print("You lost!")
                     wincount += 1
 
             # If the player chose the losing choice, they lose.
                 else:
-                    print("You lost!")
+                    print("You win!")
                     losecount += 1
 
                 #Game stats 
