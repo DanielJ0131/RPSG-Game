@@ -1,6 +1,7 @@
 """This is the main file for the Rock, Paper, Scissors, Gun Game"""
 
 """ I have fixed the code from bug, märker också att det är andra konstigheter med koden som Gamestats dycker upp hela tiden i Terminalen när det är en tie, men annars jätte bra skriven kod //Chris """
+""" Tänker också om det är bra att ha en till else ifall användaren inte inputa rätt"""
 import random
 import time
 
