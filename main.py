@@ -42,6 +42,7 @@ class Game:
             wincount = 0
             tiecount = 0
             losecount = 0
+            deathcount = 0
 
             while True:
                 gamecount += 1
@@ -94,7 +95,7 @@ class Game:
 
                     else:
                         print("You died! Better luck next time.")
-                        losecount += 1
+                        deathcount += 1
 
             # If the player chose the losing choice, they lose.
                 elif player == self.switch[computer]:
@@ -115,6 +116,7 @@ class Game:
                 time.sleep(0.5)
                 print(f"Lose count: {losecount}")
                 time.sleep(0.5)
+                print(f"Death count: {deathcount}")
 
 
 if __name__ == "__main__":
