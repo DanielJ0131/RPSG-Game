@@ -1,0 +1,35 @@
+To do List - Examination 2
+
+Please add onto the list if you want some improvements or have some nice suggestions!
+
+------------------------------------------------------------------------------------------
+Daniels Suggestions:
+			-----------------------------------
+1. Draw Game Menu	| Rock, Paper, Scissors, Gun Game |
+Example:		| 1. Start Game			  |	
+			| 2. Scoreboard			  |
+			-----------------------------------
+
+2. If you die to Gun, game stops and shows you the "Scoreboard"
+and Game Stats. This can be like a leaderboard! "How many wins can you get?"
+
+
+3. Make Gun Scenario a Class, because it takes so many code rows in the if else statements.
+This can make the code more readable.
+
+
+4. Make another Game for fun! Maybe Mi can program this one and me + Chris can contribute!
+
+
+-------------------------------------------------------------------------------------------
+
+Chris Suggestions:
+
+
+-------------------------------------------------------------------------------------------
+
+Mis Suggestions:
+
+
+
+-------------------------------------------------------------------------------------------
