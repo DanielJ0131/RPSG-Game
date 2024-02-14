@@ -78,15 +78,18 @@ class Game:
 
                     if dice >= 3 and player == "Scissors":
                         print("You cut the gun in half and survived!")
+                        print("You win!")
                         wincount += 1
 
                     elif dice >= 3 and player == "Rock":
                         print("You smashed the gun and survived!")
+                        print("You win!")
                         wincount += 1
 
                     elif dice >= 3 and player == "Paper":
-                        print("You pushed the paper into" +
+                        print("You pushed the paper into " +
                               "the gun and survived!")
+                        print("You win!")
                         wincount += 1
 
                     else:
