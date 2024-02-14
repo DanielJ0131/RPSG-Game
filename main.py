@@ -1,7 +1,12 @@
 """This is the main file for the Rock, Paper, Scissors, Gun Game"""
 
-""" I have fixed the code from bug, märker också att det är andra konstigheter med koden som Gamestats dycker upp hela tiden i Terminalen när det är en tie, men annars jätte bra skriven kod //Chris """
-""" Tänker också om det är bra att ha en till else ifall användaren inte inputa rätt"""
+# I have fixed the code from bug,
+# märker också att det är andra konstigheter med koden som Gamestats dycker
+# upp hela tiden i Terminalen när det är en tie,
+# men annars jätte bra skriven kod //Chris
+
+# Tänker också om det är bra att ha en till else ifall användaren
+# inte inputar rätt
 import random
 import time
 
@@ -18,7 +23,7 @@ class Computer:
     def __init__(self):
         self.computer = None
         self.choice = random.choices(["Rock", "Paper", "Scissors", "Gun"],
-                                weights=[0.3, 0.3, 0.3, 0.1])[0]
+                                     weights=[0.3, 0.3, 0.3, 0.1])[0]
 
 
 class Game:
@@ -37,7 +42,7 @@ class Game:
             wincount = 0
             tiecount = 0
             losecount = 0
-            
+
             while True:
                 gamecount += 1
                 player = Player()
@@ -55,8 +60,8 @@ class Game:
             # If the computer chose gun, the player has to roll the dice.
                 elif computer.choice == "Gun":
                     print("The computer chose gun!" +
-                      "Roll the dice to see if you survive! ")
-                    
+                          "Roll the dice to see if you survive! ")
+
                     input("Press enter to roll the dice! >>> ")
                     time.sleep(1)
                     print("Rolling the dice.")
@@ -67,27 +72,27 @@ class Game:
                     time.sleep(0.250)
                     print("Rolling the dice....")
                     time.sleep(0.250)
-                    
+
                     dice = random.randint(1, 6)
                     print(f"You rolled a {dice}!!!")
                     time.sleep(1)
-                    
+
                     if dice >= 3 and player.choice == "Scissors":
                         print("You cut the gun in half and survived!")
                         wincount += 1
-                    
+
                     elif dice >= 3 and player.choice == "Rock":
                         print("You smashed the gun and survived!")
                         wincount += 1
-                    
+
                     elif dice >= 3 and player.choice == "Paper":
-                        print("You pushed the paper into the gun and survived!")
+                        print("You pushed the paper into" +
+                              "the gun and survived!")
                         wincount += 1
-                    
+
                     else:
                         print("You died! Better luck next time.")
                         losecount += 1
-                        death = True  #Has no conection to anything
 
             # If the player chose the winning choice, they win.
                 elif player.choice == self.switch[computer.choice]:
@@ -99,7 +104,7 @@ class Game:
                     print("You win!")
                     losecount += 1
 
-                #Game stats 
+            # Game stats #
             print(f"\nGame count: {gamecount}")
             print(f"Win count: {wincount}")
             print(f"Tie count: {tiecount}")
