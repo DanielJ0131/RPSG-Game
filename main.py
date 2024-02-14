@@ -1,15 +1,6 @@
 """This is the main file for the Rock, Paper, Scissors, Gun Game"""
-
-# I have fixed the code from bug,
-# märker också att det är andra konstigheter med koden som Gamestats dycker
-# upp hela tiden i Terminalen när det är en tie,
-# men annars jätte bra skriven kod //Chris
-
-# Commit 1: Fixed the code from bug
-# Tänker också om det är bra att ha en till else ifall användaren
-# inte inputar rätt
 import random
-import time
+import time  # Import the time module to add a delay to the game.
 
 
 class Player:
