@@ -105,9 +105,13 @@ class Game:
 
                 # Game stats #
                 print(f"\nGame count: {gamecount}")
+                time.sleep(0.5)
                 print(f"Win count: {wincount}")
+                time.sleep(0.5)
                 print(f"Tie count: {tiecount}")
+                time.sleep(0.5)
                 print(f"Lose count: {losecount}")
+                time.sleep(0.5)
 
 
 if __name__ == "__main__":
