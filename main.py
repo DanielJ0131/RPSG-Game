@@ -5,6 +5,7 @@
 # upp hela tiden i Terminalen när det är en tie,
 # men annars jätte bra skriven kod //Chris
 
+# Commit 1: Fixed the code from bug
 # Tänker också om det är bra att ha en till else ifall användaren
 # inte inputar rätt
 import random
