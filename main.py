@@ -117,6 +117,7 @@ class Game:
                 print(f"Lose count: {losecount}")
                 time.sleep(0.5)
                 print(f"Death count: {deathcount}")
+                time.sleep(0.5)
 
 
 if __name__ == "__main__":
