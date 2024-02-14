@@ -3,6 +3,11 @@ import random
 import time  # Import the time module to add a delay to the game.
 
 
+def main():
+    """Main function to start the game."""
+    Game().play()
+
+
 class Player:
     """Player Class"""
     def __init__(self):
@@ -106,4 +111,4 @@ class Game:
 
 
 if __name__ == "__main__":
-    Game().play()
+    main()
