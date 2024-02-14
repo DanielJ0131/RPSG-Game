@@ -15,14 +15,16 @@ import time
 class Player:
     """Player Class"""
     def __init__(self):
-        self.player = None
-        self.choice = input("Enter your choice >>> ")
+        self.choice = None
+        while self.choice not in ["Rock", "Paper", "Scissors"]:
+            print('\nChoose "Rock", "Paper", or "Scissors" to play!')
+            self.choice = input("\nEnter your choice >>> ")
 
 
 class Computer:
     """Computer Class"""
     def __init__(self):
-        self.computer = None
+        self.choice = None
         self.choice = random.choices(["Rock", "Paper", "Scissors", "Gun"],
                                      weights=[0.3, 0.3, 0.3, 0.1])[0]
 
@@ -38,6 +40,7 @@ class Game:
 
     def play(self):
         """Play the game"""
+        print("\nWelcome to Rock, Paper, Scissors, Gun!")
         while True:
             gamecount = 0
             wincount = 0
@@ -46,21 +49,20 @@ class Game:
 
             while True:
                 gamecount += 1
-                player = Player()
-                computer = Computer()
-                print(f"Computer chose: {computer.choice}!")
+                player = Player().choice
+                computer = Computer().choice
+                print(f"Computer chose: {computer}!")
                 time.sleep(1)
 
             # Game Logic #
             # If the player and computer chose the same thing, it's a tie.
-                if player.choice == computer.choice:
+                if player == computer:
                     print("It's a tie!")
                     tiecount += 1
-                    break
 
             # If the computer chose gun, the player has to roll the dice.
-                elif computer.choice == "Gun":
-                    print("The computer chose gun!" +
+                elif computer == "Gun":
+                    print("The computer chose gun! " +
                           "Roll the dice to see if you survive! ")
 
                     input("Press enter to roll the dice! >>> ")
@@ -78,15 +80,15 @@ class Game:
                     print(f"You rolled a {dice}!!!")
                     time.sleep(1)
 
-                    if dice >= 3 and player.choice == "Scissors":
+                    if dice >= 3 and player == "Scissors":
                         print("You cut the gun in half and survived!")
                         wincount += 1
 
-                    elif dice >= 3 and player.choice == "Rock":
+                    elif dice >= 3 and player == "Rock":
                         print("You smashed the gun and survived!")
                         wincount += 1
 
-                    elif dice >= 3 and player.choice == "Paper":
+                    elif dice >= 3 and player == "Paper":
                         print("You pushed the paper into" +
                               "the gun and survived!")
                         wincount += 1
@@ -95,21 +97,21 @@ class Game:
                         print("You died! Better luck next time.")
                         losecount += 1
 
-            # If the player chose the winning choice, they win.
-                elif player.choice == self.switch[computer.choice]:
-                    print("You lost!")
-                    wincount += 1
-
             # If the player chose the losing choice, they lose.
-                else:
-                    print("You win!")
+                elif player == self.switch[computer]:
+                    print("You lose!")
                     losecount += 1
 
-            # Game stats #
-            print(f"\nGame count: {gamecount}")
-            print(f"Win count: {wincount}")
-            print(f"Tie count: {tiecount}")
-            print(f"Lose count: {losecount}")
+            # If the player chose the winning choice, they win.
+                else:
+                    print("You win!")
+                    wincount += 1
+
+                # Game stats #
+                print(f"\nGame count: {gamecount}")
+                print(f"Win count: {wincount}")
+                print(f"Tie count: {tiecount}")
+                print(f"Lose count: {losecount}")
 
 
 if __name__ == "__main__":
