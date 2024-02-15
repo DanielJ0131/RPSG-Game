@@ -4,8 +4,14 @@ import time  # Import the time module to add a delay to the game.
 
 
 def main():
-    """Main function to start the game."""
-    Game().play()
+    """Main function for the game"""
+    Menu.draw(Menu)
+    choice = input("\nEnter your choice >>> ")
+
+    match choice:
+        case "1": Game.play(Game)
+        case "2": Scoreboard.draw(Scoreboard)
+        case "3": Credits.draw(Credits)
 
 
 class Player:
@@ -118,6 +124,46 @@ class Game:
                 time.sleep(0.5)
                 print(f"Death count: {deathcount}")
                 time.sleep(0.5)
+
+
+class Menu:
+    """Menu Class"""
+    def draw(self):
+        """Draws the game menu"""
+        print("-----------------------------------")
+        print("|*Rock, Paper, Scissors, Gun Game*|")
+        print("|---------------------------------|")
+        print("| 1. Start Game                   |")
+        print("| 2. Scoreboard                   |")
+        print("| 3. Exit                         |")
+        print("-----------------------------------")
+
+
+class Scoreboard:
+    """Scoreboard Class"""
+    score = 0
+
+    def draw(self):
+        """Draws the game scoreboard"""
+        print("Scoreboard")
+        print(f"Score: {self.score}")
+
+
+class Credits:
+    """Credits Class"""
+
+    def draw(self):
+        """Draws the game credits and authors"""
+        author1 = "Ngoc Hong (Mi)"
+        author2 = "Chris Lubert"
+        author3 = "Daniel Jönsson"
+        print("-----------------------------------")
+        print("|           *Credits*             |")
+        print("|---------------------------------|")
+        print("|© HKR 2024 - All rights reserved.|")
+        print("|---------------------------------|")
+        print("|           Created by:           |")
+        print("-----------------------------------")
 
 
 if __name__ == "__main__":
