@@ -9,7 +9,7 @@ Daniels Suggestions:
 and Game Stats. This can be like a leaderboard! "How many wins can you get?"
 
 
-2. Make Gun Scenario a Class, because it takes so many code rows in the if else statements.
+2. Make Gun Scenario it's own function in Game, because it takes so many code rows in the if else statements.
 This can make the code more readable.
 
 
