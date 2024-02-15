@@ -9,9 +9,9 @@ def main():
     choice = input("\nEnter your choice >>> ")
 
     match choice:
-        case "1": Game.play(Game)
-        case "2": Scoreboard.draw(Scoreboard)
-        case "3": Credits.draw(Credits)
+        case "1": Game().play()
+        case "2": Scoreboard().draw()
+        case "3": Credits().draw()
 
 
 class Player:
@@ -83,17 +83,17 @@ class Game:
                     print(f"You rolled a {dice}!!!")
                     time.sleep(1)
 
-                    if dice >= 3 and player == "Scissors":
+                    if dice >= 4 and player == "Scissors":
                         print("You cut the gun in half and survived!")
                         print("You win!")
                         wincount += 1
 
-                    elif dice >= 3 and player == "Rock":
+                    elif dice >= 4 and player == "Rock":
                         print("You smashed the gun and survived!")
                         print("You win!")
                         wincount += 1
 
-                    elif dice >= 3 and player == "Paper":
+                    elif dice >= 4 and player == "Paper":
                         print("You pushed the paper into " +
                               "the gun and survived!")
                         print("You win!")
@@ -162,8 +162,12 @@ class Credits:
         print("|---------------------------------|")
         print("|© HKR 2024 - All rights reserved.|")
         print("|---------------------------------|")
-        print("|           Created by:           |")
+        print("|          Created by:            |")
+        print(f"|-{author1}                  |")
+        print(f"|-{author2}                    |")
+        print(f"|-{author3}                  |")
         print("-----------------------------------")
+        print("Thank you for playing!")
 
 
 if __name__ == "__main__":
