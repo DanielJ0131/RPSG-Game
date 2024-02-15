@@ -3,7 +3,7 @@ To do List - Examination 2
 Please add onto the list if you want some improvements or have some nice suggestions!
 
 ------------------------------------------------------------------------------------------
-Daniels Suggestions
+Daniels Suggestions:
 
 1. If you die to Gun, game stops and shows you the "Scoreboard"
 and Game Stats. This can be like a leaderboard! "How many wins can you get?"
