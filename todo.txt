@@ -21,8 +21,8 @@ This can make the code more readable.
 -------------------------------------------------------------------------------------------
 
 Chris Suggestions:
-
-
+1. Going to make the code better and adding a new feature, like how many rounds to play or wanna play again.
+(AND DANIEL DO NOT DO MY SUGGESTION, I wanna try it too :D )
 -------------------------------------------------------------------------------------------
 
 Mis Suggestions:
