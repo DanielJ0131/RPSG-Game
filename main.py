@@ -51,7 +51,7 @@ class Game:
     def play(self, rounds):
         """Play the game"""
         print("\nWelcome to Rock, Paper, Scissors, Gun!")
-        best_of_rounds = rounds - (rounds%2)
+        best_of_rounds = (rounds//2) + 1
         gamecount = 0
         wincount = 0
         tiecount = 0
