@@ -128,32 +128,30 @@ class Game:
                 elif losecount == best_of_rounds:
                     print("And it's the computer")
                 rematch = input("Wanna play again? , yes/no: ")
+
+                if rematch == "no":
+                    print("Good game :)")
+            
+                    # Game stats #
+                    print("\nLatest score:")
+                    print(f"Game count: {gamecount}")
+                    time.sleep(0.5)
+                    print(f"Win count: {wincount}")
+                    time.sleep(0.5)
+                    print(f"Tie count: {tiecount}")
+                    time.sleep(0.5)
+                    print(f"Lose count: {losecount}")
+                    time.sleep(0.5)
+                    print(f"Death count: {deathcount}")
+                    time.sleep(0.5)
                 
-                if rematch == "yes":
+                elif rematch == "yes":
                     print("reset count")
                     gamecount = 0
                     wincount = 0
                     tiecount = 0
                     losecount = 0
                     deathcount = 0
-                    
-                elif rematch == "no":
-                    print("Good game :)")
-                    
-
-                # Game stats #
-                print("\nLatest score:")
-                print(f"Game count: {gamecount}")
-                time.sleep(0.5)
-                print(f"Win count: {wincount}")
-                time.sleep(0.5)
-                print(f"Tie count: {tiecount}")
-                time.sleep(0.5)
-                print(f"Lose count: {losecount}")
-                time.sleep(0.5)
-                print(f"Death count: {deathcount}")
-                time.sleep(0.5)
-
 
 class Menu:
     """Menu Class"""
