@@ -142,8 +142,8 @@ class Game:
                     
 
                 # Game stats #
-                print("Latest score")
-                print(f"\nGame count: {gamecount}")
+                print("\nLatest score:")
+                print(f"Game count: {gamecount}")
                 time.sleep(0.5)
                 print(f"Win count: {wincount}")
                 time.sleep(0.5)
