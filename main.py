@@ -7,9 +7,9 @@ def main():
     """Main function for the game"""
     Menu().draw()
     choice = input("\nEnter your choice >>> ")
-    while True:
-        match choice:
-            case "1": 
+    match choice:
+        case "1":
+            while True:
                 rounds = int(input("Best of rounds to play? "))
                 if rounds % 2 == 0:
                     print("Please enter an odd number")
@@ -17,9 +17,9 @@ def main():
                 else:
                     Game().play(rounds)
                     break    
-            case "2": Scoreboard().draw()
-            case "3": Credits().draw()
-            case "4": Instruction().draw()
+        case "2": Scoreboard().draw()
+        case "3": Credits().draw()
+        case "4": Instruction().draw()
 
 
 class Player:
