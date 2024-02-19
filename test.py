@@ -25,3 +25,8 @@ def test_roll_a_dice():
     # assert main.dice_roll in range(1, 7)
     # self.assertEqual(player.choice, None)
     # self.assertIn(computer.choice, ["Rock", "Paper", "Scissors", "Gun"])
+
+
+def unittest_skip():
+    """Test the skip function"""
+    # self.skipTest("Skip this test")
