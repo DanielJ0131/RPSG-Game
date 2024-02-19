@@ -8,9 +8,9 @@ def main():
    
     match choice:
     Menu().draw()
-    choice = input("\nEnter your choice >>> ")
         case "1":
             while True:
+                choice = input("\nEnter your choice >>> ")
                 player_name = input("Enter player name: ")
                 print(f"Are you happy with the name {player_name} ")
                 yes_or_no = input("yes/no: ")
@@ -28,7 +28,10 @@ def main():
 
         case "2": Scoreboard().draw()
         case "3": Credits().draw()
-        case "4": Instruction().draw()
+        case "4": 
+                Instruction().draw()
+                time.sleep(1)
+                
 
 
 class Player:
