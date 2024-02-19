@@ -25,6 +25,13 @@ def test_roll_a_dice():
     # assert main.dice_roll in range(1, 7)
     # self.assertEqual(player.choice, None)
     # self.assertIn(computer.choice, ["Rock", "Paper", "Scissors", "Gun"])
+    # self.assertIsInstance(game.switch, dict)
+    # "White Box Testing"
+    # self.assertEqual(main.dice_roll, 1)
+    # expected = 1
+    # actual = main.dice_roll
+    # test_addition(expected, actual)
+    # good to call these functions "test" because it's a test file
 
 
 def unittest_skip():
