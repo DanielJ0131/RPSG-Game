@@ -10,17 +10,27 @@ def main():
     match choice:
         case "1":
             while True:
-                rounds = int(input("Best of rounds to play? "))
-                if rounds % 2 == 0:
-                    print("Please enter an odd number")
+                player_name = input("Enter player name: ")
+                print(f"Are you happy with the name {player_name} ")
+                yes_or_no = input("yes/no: ")
+                if yes_or_no == "no":
+                    print("Please enter another name")
                     continue
-                else:
-                    Game().play(rounds)
-                    break
+                elif yes_or_no == "yes":
+                    rounds = int(input("Best of rounds to play? "))
+                    if rounds % 2 == 0:
+                        print("Please enter an odd number")
+                        continue
+                    else:
+                        Game().play(rounds)
+                        continue    
+        
         case "2": Scoreboard().draw()
         case "3": Credits().draw()
-        case "4": Instruction().draw()
-
+        case "4":
+            return_menu = input(" Return to the main menu using 5: ")
+            if return_menu == str(5):
+                Instruction().draw()
 
 class Player:
     """Player Class"""
