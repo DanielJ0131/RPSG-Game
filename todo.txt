@@ -25,6 +25,9 @@ This can make the code more readable.
 6. Scoreboard, is it printed after every win / lose / tie or only when we go to "Scoreboard"? 
 Maybe we should print it after every game, so we can see how many wins we have accumulated.
 
+
+7. Make roll the dice a function so that we can unit test it easier!
+
 -------------------------------------------------------------------------------------------
 
 Chris Suggestions:
