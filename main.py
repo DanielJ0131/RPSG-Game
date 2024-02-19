@@ -242,6 +242,8 @@ class Credits:
         print("Chris gillar NAdreas")
         print("Daniel gillar Andreas också!")
         print("Mi gillar Andreas också!")
+        print("HEj!")
+        print("Då!")
 
 
 if __name__ == "__main__":
