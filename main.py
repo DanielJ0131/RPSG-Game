@@ -16,7 +16,7 @@ def main():
                     continue
                 else:
                     Game().play(rounds)
-                    break    
+                    break
         case "2": Scoreboard().draw()
         case "3": Credits().draw()
         case "4": Instruction().draw()
@@ -74,7 +74,7 @@ class Game:
             # If the computer chose gun, the player has to roll the dice.
             elif computer == "Gun":
                 print("The computer chose gun! " +
-                          "Roll the dice to see if you survive! ")
+                      "Roll the dice to see if you survive! ")
 
                 input("Press enter to roll the dice! >>> ")
                 time.sleep(1)
@@ -103,7 +103,7 @@ class Game:
 
                 elif dice >= 4 and player == "Paper":
                     print("You pushed the paper into " +
-                              "the gun and survived!")
+                          "the gun and survived!")
                     print("You win!")
                     wincount += 1
 
@@ -131,7 +131,7 @@ class Game:
 
                 if rematch == "no":
                     print("Good game :)")
-            
+
                     # Game stats #
                     print("\nLatest score:")
                     time.sleep(1)
@@ -145,7 +145,7 @@ class Game:
                     time.sleep(0.5)
                     print(f"Death count: {deathcount}")
                     time.sleep(0.5)
-                
+
                 elif rematch == "yes":
                     print("reset count")
                     gamecount = 0
@@ -153,6 +153,7 @@ class Game:
                     tiecount = 0
                     losecount = 0
                     deathcount = 0
+
 
 class Menu:
     """Menu Class"""
@@ -167,25 +168,27 @@ class Menu:
         print("| 4. Instructions                 |")
         print("-----------------------------------")
 
+
 class Instruction:
     "Instruction Class"
     def draw(self):
         "Draws the game Instruction"
         print("""
               How to Play the game step by step:
-              1. The game is Simple and it's about Rock,Papper, Scissors and Gun.
-              2. If you have played this game before skip this tutorial, otherwise continue.
+              1. Game is simple and it's about Rock, Paper, Scissors and Gun.
+              2. If you have played this game before, skip this tutorial.
               3. To Start, the player choses how many rounds to play.
               4. Then the player will go up agains a computer bot.
               5. The player then has the options Rock, Paper or Scissors
               6. The computer has the options Rock, Paper, Scissors or Gun.
               7. Which ever hand is stronger that person will Win.
               8. Then we do a reapet from 7 to the best of rounds.
-              9. The score will show up and show you the results at the end of the rounds.
-              10. You could either beat the computer, lose agains the computer or play again.
+              9. The score will show you the results at the end of the rounds.
+              10. You can either beat the computer, lose or play again.
 
-              
+
               """)
+
 
 class Scoreboard:
     """Scoreboard Class"""
