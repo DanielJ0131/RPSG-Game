@@ -28,6 +28,9 @@ Maybe we should print it after every game, so we can see how many wins we have a
 
 7. Make roll the dice a function so that we can unit test it easier!
 
+
+8. Best of Rounds, Maybe this is always set to 10 so it's easier to play and keep score?
+
 -------------------------------------------------------------------------------------------
 
 Chris Suggestions:
