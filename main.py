@@ -1,10 +1,10 @@
-"""This is the main file for the Rock, Paper, Scissors, Gun Game"""
+"""This is the main file for the Rock, Paper, Scissors, Gun Game."""
 import random
 import time  # Import the time module to add a delay to the game.
 
 
 def main():
-    """Main function for the game"""
+    """Use the main function."""
     Menu().draw()
     choice = input("\nEnter your choice >>> ")
     match choice:
@@ -34,8 +34,10 @@ def main():
 
 
 class Player:
-    """Player Class"""
+    """Player Class."""
+
     def __init__(self):
+        """Init for the Player Class."""
         self.choice = None
         while self.choice not in ["Rock", "Paper", "Scissors"]:
             print('\nChoose "Rock", "Paper", or "Scissors" to play!')
@@ -43,16 +45,20 @@ class Player:
 
 
 class Computer:
-    """Computer Class"""
+    """Computer Class."""
+
     def __init__(self):
+        """Init for the Computer Class."""
         self.choice = None
         self.choice = random.choices(["Rock", "Paper", "Scissors", "Gun"],
                                      weights=[0.3, 0.3, 0.3, 0.1])[0]
 
 
 class Game:
-    """Game Class"""
+    """Game Class."""
+
     def __init__(self):
+        """Init for the Game Class."""
         self.switch = {
             "Rock": "Scissors",
             "Paper": "Rock",
@@ -60,7 +66,7 @@ class Game:
         }
 
     def play(self, rounds):
-        """Play the game"""
+        """Play the game."""
         print("\nWelcome to Rock, Paper, Scissors, Gun!")
         best_of_rounds = (rounds//2) + 1
         gamecount = 0
@@ -167,9 +173,10 @@ class Game:
 
 
 class Menu:
-    """Menu Class"""
+    """Menu Class."""
+
     def draw(self):
-        """Draws the game menu"""
+        """Draws the game menu."""
         print("-----------------------------------")
         print("|*Rock, Paper, Scissors, Gun Game*|")
         print("|---------------------------------|")
@@ -181,9 +188,10 @@ class Menu:
 
 
 class Instruction:
-    "Instruction Class"
+    """Instruction Class."""
+
     def draw(self):
-        "Draws the game Instruction"
+        """Draws the game Instruction."""
         print("""
               How to Play the game step by step:
               1. Game is simple and it's about Rock, Paper, Scissors and Gun.
@@ -202,20 +210,21 @@ class Instruction:
 
 
 class Scoreboard:
-    """Scoreboard Class"""
+    """Scoreboard Class."""
+
     score = 0
 
     def draw(self):
-        """Draws the game scoreboard"""
+        """Draws the game scoreboard."""
         print("Scoreboard")
         print(f"Score: {self.score}")
 
 
 class Credits:
-    """Credits Class"""
+    """Credits Class."""
 
     def draw(self):
-        """Draws the game credits and authors"""
+        """Draws the game credits and authors."""
         author1 = "Ngoc Hong (Mi)"
         author2 = "Chris Lubert"
         author3 = "Daniel Jönsson"
