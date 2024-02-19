@@ -19,5 +19,9 @@ def test_init_default_objects():
         "Scissors": "Paper",
     }
 
+
+def test_roll_a_dice():
+    """Test the roll_a_dice function"""
+    # assert main.dice_roll in range(1, 7)
     # self.assertEqual(player.choice, None)
     # self.assertIn(computer.choice, ["Rock", "Paper", "Scissors", "Gun"])
