@@ -239,11 +239,6 @@ class Credits:
         print(f"|-{author3}                  |")
         print("-----------------------------------")
         print("Thank you for playing!")
-        print("Chris gillar NAdreas")
-        print("Daniel gillar Andreas också!")
-        print("Mi gillar Andreas också!")
-        print("HEj!")
-        print("Då!")
 
 
 if __name__ == "__main__":
