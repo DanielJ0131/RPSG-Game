@@ -29,6 +29,8 @@ def test_roll_a_dice():
     # "White Box Testing"
     # self.assertEqual(main.dice_roll, 1)
     # expected = 1
+    # result = 1
+    # self.assertEqual(res
     # actual = main.dice_roll
     # test_addition(expected, actual)
     # good to call these functions "test" because it's a test file
