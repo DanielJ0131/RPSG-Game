@@ -18,15 +18,21 @@ This can make the code more readable.
 
 4. Make Players able to import an old Scoreboard with pickle.load and pickle.dump!
 
+
+5. After reading instructions, be able to "go back"
+
+
+6. Scoreboard, is it printed after every win / lose / tie or only when we go to "Scoreboard"? 
+Maybe we should print it after every game, so we can see how many wins we have accumulated.
+
 -------------------------------------------------------------------------------------------
 
 Chris Suggestions:
-1. Going to make the code better and adding a new feature, like how many rounds to play or wanna play again.
-(AND DANIEL DO NOT DO MY SUGGESTION, I wanna try it too :D )
+1. Chris will keep up the good work!
 -------------------------------------------------------------------------------------------
 
 Mis Suggestions:
-
+1. Mi will start coding soon!
 
 
 -------------------------------------------------------------------------------------------
