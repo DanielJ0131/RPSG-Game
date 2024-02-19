@@ -28,7 +28,6 @@ def main():
         case "2": Scoreboard().draw()
         case "3": Credits().draw()
         case "4": Instruction().draw()
-                
 
 
 class Player:
