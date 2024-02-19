@@ -10,7 +10,6 @@ def main():
     match choice:
         case "1":
             while True:
-                choice = input("\nEnter your choice >>> ")
                 player_name = input("Enter player name: ")
                 print(f"Are you happy with the name {player_name} ")
                 yes_or_no = input("yes/no: ")
