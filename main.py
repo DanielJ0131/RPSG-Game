@@ -239,6 +239,7 @@ class Credits:
         print(f"|-{author3}                  |")
         print("-----------------------------------")
         print("Thank you for playing!")
+        print("Chris gillar NAdreas")
 
 
 if __name__ == "__main__":
