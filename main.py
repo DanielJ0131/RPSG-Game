@@ -6,6 +6,7 @@ import time  # Import the time module to add a delay to the game.
 def main():
     """Use the main function."""
     Menu().draw()
+    choice = input("\nEnter your choice >>> ")
     match choice:
         case "1":
             while True:
@@ -240,6 +241,8 @@ class Credits:
         print("-----------------------------------")
         print("Thank you for playing!")
         print("Chris gillar NAdreas")
+        print("Daniel gillar Andreas också!")
+        print("Mi gillar Andreas också!")
 
 
 if __name__ == "__main__":
