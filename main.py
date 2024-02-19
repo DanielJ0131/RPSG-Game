@@ -5,9 +5,8 @@ import time  # Import the time module to add a delay to the game.
 
 def main():
     """Use the main function."""
-   
-    match choice:
     Menu().draw()
+    match choice:
         case "1":
             while True:
                 choice = input("\nEnter your choice >>> ")
