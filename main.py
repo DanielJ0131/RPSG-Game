@@ -23,14 +23,11 @@ def main():
                         continue
                     else:
                         Game().play(rounds)
-                        continue
+                        break
 
         case "2": Scoreboard().draw()
         case "3": Credits().draw()
-        case "4":
-            return_menu = input(" Return to the main menu using 5: ")
-            if return_menu == str(5):
-                Instruction().draw()
+        case "4": Instruction().draw()
 
 
 class Player:
