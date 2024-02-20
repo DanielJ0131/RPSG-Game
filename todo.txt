@@ -5,31 +5,18 @@ Please add onto the list if you want some improvements or have some nice suggest
 ------------------------------------------------------------------------------------------
 Daniels Suggestions:
 
-1. If you die to Gun, game stops and shows you the "Scoreboard"
-and Game Stats. This can be like a leaderboard! "How many wins can you get?"
+
+1. Make Players able to import an old/new Scoreboard with pickle.load and pickle.dump on the players list!
 
 
-2. Make Gun Scenario it's own function in Game, because it takes so many code rows in the if else statements.
-This can make the code more readable.
+2. Print Scoreboard after every Win / Tie / Loss
+Add Score result to players list to be able to pickle dump result!
 
+3. Unit testing!
 
-3. Make another Game for fun! Maybe Mi can program this one and me + Chris can contribute!
+4. venv, all errors/problems fixing
 
-
-4. Make Players able to import an old Scoreboard with pickle.load and pickle.dump!
-
-
-5. After reading instructions, be able to "go back"
-
-
-6. Scoreboard, is it printed after every win / lose / tie or only when we go to "Scoreboard"? 
-Maybe we should print it after every game, so we can see how many wins we have accumulated.
-
-
-7. Make roll the dice a function so that we can unit test it easier!
-
-
-8. Best of Rounds, Maybe this is always set to 10 so it's easier to play and keep score?
+5. Best of Rounds, Maybe this is always set to 5 so it's easier to play and keep score?
 
 -------------------------------------------------------------------------------------------
 
