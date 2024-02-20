@@ -1,4 +1,5 @@
 """This is the main file for the Rock, Paper, Scissors, Gun Game."""
+
 import random
 import time  # Import the time module to add a delay to the game.
 
@@ -52,8 +53,9 @@ class Computer:
     def __init__(self):
         """Init for the Computer Class."""
         self.choice = None
-        self.choice = random.choices(["Rock", "Paper", "Scissors", "Gun"],
-                                     weights=[0.3, 0.3, 0.3, 0.1])[0]
+        self.choice = random.choices(
+            ["Rock", "Paper", "Scissors", "Gun"], weights=[0.3, 0.3, 0.3, 0.1]
+        )[0]
 
 
 class Game:
@@ -70,7 +72,7 @@ class Game:
     def play(self, rounds):
         """Play the game."""
         print("\nWelcome to Rock, Paper, Scissors, Gun!")
-        best_of_rounds = (rounds//2) + 1
+        best_of_rounds = (rounds // 2) + 1
 
         game = GameStats()
 
@@ -91,8 +93,9 @@ class Game:
 
             # If the computer chose gun, the player has to roll the dice.
             elif computer == "Gun":
-                print("The computer chose gun! " +
-                      "Roll the dice to see if you survive! ")
+                print(
+                    "The computer chose gun! " + "Roll the dice to see if you survive! "
+                )
                 self.roll_dice(game, player)
 
             # If the player chose the losing choice, they lose.
@@ -105,8 +108,7 @@ class Game:
                 print("You win!")
                 game.win()
 
-            if game.wincount >= best_of_rounds or \
-               game.losecount >= best_of_rounds:
+            if game.wincount >= best_of_rounds or game.losecount >= best_of_rounds:
                 self.announce_winner(game, best_of_rounds)
 
     def roll_dice(self, game, player):
@@ -135,8 +137,7 @@ class Game:
                 print("You smashed the gun and won!")
 
             elif player == "Paper":
-                print("You pushed the paper into " +
-                      "the gun and won!")
+                print("You pushed the paper into " + "the gun and won!")
 
         else:
             print("You lost! Better luck next time.")
@@ -236,7 +237,8 @@ class Instruction:
 
     def draw(self):
         """Draws the game Instruction."""
-        print("""
+        print(
+            """
               How to Play the game step by step:
               1. Game is simple and it's about Rock, Paper, Scissors and Gun.
               2. If you have played this game before, skip this tutorial.
@@ -248,7 +250,8 @@ class Instruction:
               8. Then we do a reapet from 7 to the best of rounds.
               9. The score will show you the results at the end of the rounds.
               10. You can either beat the computer, lose or play again.
-              """)
+              """
+        )
 
 
 class Scoreboard:
