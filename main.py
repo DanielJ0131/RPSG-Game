@@ -230,7 +230,7 @@ class Scoreboard:
         print("Scoreboard")
         print(f"Score: {self.score}")
         for player in players:
-            print(player)
+            print(player) #<-------------------- here is a list of players
 
 
 class Credits:
