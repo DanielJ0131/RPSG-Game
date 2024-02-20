@@ -21,12 +21,8 @@ def main():
                     elif yes_or_no == "no":
                         print("Please enter another name")
                         continue
-                rounds = int(input("Best of rounds to play? "))
-                if rounds % 2 == 0:
-                    print("Please enter an odd number")
-                    continue
-                else:
-                    Game().play(rounds)
+                rounds = 5
+                Game().play(rounds)
 
             case "2":
                 Scoreboard().draw(lst)
