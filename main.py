@@ -26,8 +26,8 @@ def main():
                         break
 
         case "2": Scoreboard().draw()
-        case "3": Credits().draw()
-        case "4": Instruction().draw()
+        case "3": Instruction().draw()
+        case "4": Credits().draw()
 
 
 class Player:
@@ -66,14 +66,13 @@ class Game:
         """Play the game."""
         print("\nWelcome to Rock, Paper, Scissors, Gun!")
         best_of_rounds = (rounds//2) + 1
-        gamecount = 0
-        wincount = 0
-        tiecount = 0
-        losecount = 0
-        deathcount = 0
 
-        while (wincount or losecount) < best_of_rounds:
-            gamecount += 1
+        game = GameStats()
+
+        while (game.wincount or game.losecount) < best_of_rounds:
+            game.add_count()
+
+            # Player and Computer choices #
             player = Player().choice
             computer = Computer().choice
             print(f"Computer chose: {computer}!")
@@ -83,90 +82,131 @@ class Game:
             # If the player and computer chose the same thing, it's a tie.
             if player == computer:
                 print("It's a tie!")
-                tiecount += 1
+                game.tie()
 
             # If the computer chose gun, the player has to roll the dice.
             elif computer == "Gun":
                 print("The computer chose gun! " +
                       "Roll the dice to see if you survive! ")
-
-                input("Press enter to roll the dice! >>> ")
-                time.sleep(1)
-                print("Rolling the dice.")
-                time.sleep(0.250)
-                print("Rolling the dice..")
-                time.sleep(0.250)
-                print("Rolling the dice...")
-                time.sleep(0.250)
-                print("Rolling the dice....")
-                time.sleep(0.250)
-
-                dice = random.randint(1, 6)
-                print(f"You rolled a {dice}!!!")
-                time.sleep(1)
-
-                if dice >= 4 and player == "Scissors":
-                    print("You cut the gun in half and survived!")
-                    print("You win!")
-                    wincount += 1
-
-                elif dice >= 4 and player == "Rock":
-                    print("You smashed the gun and survived!")
-                    print("You win!")
-                    wincount += 1
-
-                elif dice >= 4 and player == "Paper":
-                    print("You pushed the paper into " +
-                          "the gun and survived!")
-                    print("You win!")
-                    wincount += 1
-
-                else:
-                    print("You died! Better luck next time.")
-                    deathcount += 1
+                self.roll_dice(game, player)
 
             # If the player chose the losing choice, they lose.
             elif player == self.switch[computer]:
                 print("You lose!")
-                losecount += 1
+                game.lose()
 
             # If the player chose the winning choice, they win.
             else:
                 print("You win!")
-                wincount += 1
+                game.win()
 
-            if wincount == best_of_rounds or losecount == best_of_rounds:
-                print("We have a winner")
-                if wincount == best_of_rounds:
-                    print("And it's the user")
-                elif losecount == best_of_rounds:
-                    print("And it's the computer")
-                rematch = input("Wanna play again? , yes/no: ")
+            if game.wincount >= best_of_rounds or \
+               game.losecount >= best_of_rounds:
+                self.announce_winner(game, best_of_rounds)
 
-                if rematch == "no":
-                    print("Good game :)")
+    def roll_dice(self, game, player):
+        """Roll the dice to see if the player survives the gun."""
+        input("Press enter to roll the dice! >>> ")
+        time.sleep(1)
+        print("Rolling the dice.")
+        time.sleep(0.250)
+        print("Rolling the dice..")
+        time.sleep(0.250)
+        print("Rolling the dice...")
+        time.sleep(0.250)
+        print("Rolling the dice....")
+        time.sleep(0.250)
 
-                    # Game stats #
-                    print("\nLatest score:")
-                    time.sleep(1)
-                    print(f"Game count: {gamecount}")
-                    time.sleep(0.5)
-                    print(f"Win count: {wincount}")
-                    time.sleep(0.5)
-                    print(f"Tie count: {tiecount}")
-                    time.sleep(0.5)
-                    print(f"Lose count: {losecount}")
-                    time.sleep(0.5)
-                    print(f"Death count: {deathcount}")
-                    time.sleep(0.5)
+        dice = random.randint(1, 6)
+        print(f"You rolled a {dice}!!!")
+        time.sleep(1)
 
-                elif rematch == "yes":
-                    print("reset count")
-                    gamecount = 0
-                    wincount = 0
-                    tiecount = 0
-                    losecount = 0
-                    deathcount = 0
+        if dice >= 4:
+            game.win()
+            if player == "Scissors":
+                print("You cut the gun in half and won!")
+
+            elif player == "Rock":
+                print("You smashed the gun and won!")
+
+            elif player == "Paper":
+                print("You pushed the paper into " +
+                      "the gun and won!")
+
+        else:
+            print("You lost! Better luck next time.")
+            game.lose()
+
+    def announce_winner(self, game, best_of_rounds):
+        """Check who is the winner."""
+
+        print("We have a winner")
+        if game.wincount >= best_of_rounds:
+            print("And it's the user")
+
+        elif game.losecount >= best_of_rounds:
+            print("And it's the computer")
+
+        rematch = input("Wanna play again? , yes/no: ")
+
+        if rematch == "no":
+            print("Good game :)")
+
+            # Game stats #
+            time.sleep(2)
+            game.print_stats()
+
+        else:
+            print("Rematch!")
+            time.sleep(2)
+            game.reset_stats()
+
+
+class GameStats:
+    """GameStats Class."""
+
+    def __init__(self):
+        """Init for the GameStats Class."""
+        self.wincount = 0
+        self.losecount = 0
+        self.tiecount = 0
+        self.gamecount = 0
+
+    def win(self):
+        """Win Count function."""
+        self.wincount += 1
+
+    def lose(self):
+        """Lose Count function."""
+        self.losecount += 1
+
+    def tie(self):
+        """Tie Count function."""
+        self.tiecount += 1
+
+    def add_count(self):
+        """Game Count function."""
+        self.gamecount += 1
+
+    def print_stats(self):
+        """Print the game stats."""
+        print("\nLatest score:")
+        time.sleep(1)
+        print(f"Game count: {self.gamecount}")
+        time.sleep(0.5)
+        print(f"Win count: {self.wincount}")
+        time.sleep(0.5)
+        print(f"Tie count: {self.tiecount}")
+        time.sleep(0.5)
+        print(f"Lose count: {self.losecount}")
+        time.sleep(0.5)
+
+    def reset_stats(self):
+        """Reset the game stats."""
+        self.wincount = 0
+        self.losecount = 0
+        self.tiecount = 0
+        self.gamecount = 0
 
 
 class Menu:
@@ -179,8 +219,8 @@ class Menu:
         print("|---------------------------------|")
         print("| 1. Start Game                   |")
         print("| 2. Scoreboard                   |")
-        print("| 3. Exit                         |")
-        print("| 4. Instructions                 |")
+        print("| 3. Instructions                 |")
+        print("| 4. Credits                      |")
         print("-----------------------------------")
 
 
@@ -201,8 +241,6 @@ class Instruction:
               8. Then we do a reapet from 7 to the best of rounds.
               9. The score will show you the results at the end of the rounds.
               10. You can either beat the computer, lose or play again.
-
-
               """)
 
 
