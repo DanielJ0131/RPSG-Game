@@ -5,31 +5,42 @@ import time  # Import the time module to add a delay to the game.
 
 def main():
     """Use the main function."""
-    Menu().draw()
-    choice = input("\nEnter your choice >>> ")
-    match choice:
-        case "1":
-            while True:
-                player_name = input("Enter player name: ")
-                print(f"Are you happy with the name {player_name} ")
-                yes_or_no = input("yes/no: ")
-                if yes_or_no == "no":
-                    print("Please enter another name")
-                    continue
-                elif yes_or_no == "yes":
-                    rounds = int(input("Best of rounds to play? "))
-                    if rounds % 2 == 0:
-                        print("Please enter an odd number")
-                        continue
-                    else:
-                        Game().play(rounds)
+    lst = []
+    while True:
+        Menu().draw()
+        choice = input("\nEnter your choice >>> ")
+        match choice:
+            case "1":
+                while True:
+                    player_name = input("Enter player name: ")
+                    print(f"Are you happy with the name {player_name} ")
+                    yes_or_no = input("yes/no: ")
+                    if yes_or_no == "yes":
+                        lst.append(player_name)
                         break
+                    elif yes_or_no == "no":
+                        print("Please enter another name")
+                        continue
+                rounds = int(input("Best of rounds to play? "))
+                if rounds % 2 == 0:
+                    print("Please enter an odd number")
+                    continue
+                else:
+                    Game().play(rounds)
+                      
+            case "2":
+                Scoreboard().draw(lst)
+                continue
+            case "3":
+                Credits().draw()
+                continue
 
-        case "2": Scoreboard().draw()
-        case "3": Credits().draw()
-        case "4": 
+            case "4":
                 Instruction().draw()
-                time.sleep(1)
+                time.sleep(1) 
+                continue
+            
+ 
                 
 
 
@@ -214,10 +225,12 @@ class Scoreboard:
 
     score = 0
 
-    def draw(self):
+    def draw(self, players):
         """Draws the game scoreboard."""
         print("Scoreboard")
         print(f"Score: {self.score}")
+        for player in players:
+            print(player)
 
 
 class Credits:
