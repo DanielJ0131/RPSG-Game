@@ -94,7 +94,8 @@ class Game:
             # If the computer chose gun, the player has to roll the dice.
             elif computer == "Gun":
                 print(
-                    "The computer chose gun! " + "Roll the dice to see if you survive! "
+                    "The computer chose gun! " +
+                    "Roll the dice to see if you survive! "
                 )
                 self.roll_dice(game, player)
 
@@ -108,7 +109,8 @@ class Game:
                 print("You win!")
                 game.win()
 
-            if game.wincount >= best_of_rounds or game.losecount >= best_of_rounds:
+            if (game.wincount >= best_of_rounds or
+               game.losecount >= best_of_rounds):
                 self.announce_winner(game, best_of_rounds)
 
     def roll_dice(self, game, player):
