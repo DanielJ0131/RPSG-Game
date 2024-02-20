@@ -41,9 +41,9 @@ class Player:
     def __init__(self):
         """Init for the Player Class."""
         self.choice = None
-        while self.choice not in ["rock", "paper", "scissors"]:
+        while self.choice not in ["Rock", "Paper", "Scissors"]:
             print('\nChoose "Rock", "Paper", or "Scissors" to play!')
-            self.choice = input("\nEnter your choice >>> ").lower()
+            self.choice = input("\nEnter your choice >>> ")
 
 
 class Computer:
@@ -53,7 +53,7 @@ class Computer:
         """Init for the Computer Class."""
         self.choice = None
         self.choice = random.choices(
-            ["rock", "paper", "scissors", "gun"], weights=[0.3, 0.3, 0.3, 0.1]
+            ["Rock", "Paper", "Scissors", "Gun"], weights=[0.3, 0.3, 0.3, 0.1]
         )[0]
 
 
@@ -63,9 +63,9 @@ class Game:
     def __init__(self):
         """Init for the Game Class."""
         self.switch = {
-            "rock": "scissors",
-            "paper": "rock",
-            "scissors": "paper",
+            "Rock": "Scissors",
+            "Paper": "Rock",
+            "Scissors": "Paper",
         }
 
     def play(self, rounds):
@@ -91,10 +91,10 @@ class Game:
                 game.tie()
                 time.sleep(1)
 
-            # If the computer chose gun, the player has to roll the dice.
+            # If the computer chose Gun, the player has to roll the dice.
             elif computer == "Gun":
                 print(
-                    "The computer chose gun! " +
+                    "The computer chose Gun! " +
                     "Roll the dice to see if you survive! "
                 )
                 self.roll_dice(game, player)
@@ -118,7 +118,7 @@ class Game:
                 time.sleep(1)
 
     def roll_dice(self, game, player):
-        """Roll the dice to see if the player survives the gun."""
+        """Roll the dice to see if the player survives the Gun."""
         input("Press enter to roll the dice! >>> ")
         time.sleep(1)
         print("Rolling the dice.")
@@ -137,13 +137,13 @@ class Game:
         if dice >= 4:
             game.win()
             if player == "Scissors":
-                print("You cut the gun in half and won!")
+                print("You cut the Gun in half and won!")
 
             elif player == "Rock":
-                print("You smashed the gun and won!")
+                print("You smashed the Gun and won!")
 
             elif player == "Paper":
-                print("You pushed the paper into " + "the gun and won!")
+                print("You pushed the Paper into " + "the Gun and won!")
 
         else:
             print("You lost! Better luck next time.")
