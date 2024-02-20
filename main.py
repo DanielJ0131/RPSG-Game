@@ -32,7 +32,7 @@ def main():
                 continue
             case "4":
                 Credits().draw()
-                continue
+                break
 
 
 class Player:
