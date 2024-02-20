@@ -10,7 +10,7 @@ v1.3.0 (2024-02-20)
 
 
 
-v1.2.0 (2024-02-16)
+v1.2.0 (2024-02-19)
 ------------------------
 
 * Adds Instructions and fixes Pylint and Flake8 Issues
@@ -18,14 +18,14 @@ v1.2.0 (2024-02-16)
 
 
 
-v1.1.0 (2024-02-13)
+v1.1.0 (2024-02-15)
 ------------------------
 
 * Adds more Classes; Credits, Scoreboard and Menu to the code.
 
 
 
-v1.0.0 (2021-02-10)
+v1.0.0 (2024-02-14)
 ------------------------
 
 * First release!
