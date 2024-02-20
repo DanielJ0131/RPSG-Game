@@ -14,7 +14,7 @@ Add Score result to players list to be able to pickle dump result!
 
 3. Unit testing!
 
-4. venv, all errors/problems fixing
+4. venv, all errors/problems fixing - https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/python-venv.md GOOD LINK!
 
 5. Best of Rounds, Maybe this is always set to 5 so it's easier to play and keep score?
 
