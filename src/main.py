@@ -219,14 +219,16 @@ class Menu:
 
     def draw(self):
         """Draws the game menu."""
-        print("-----------------------------------")
-        print("|*Rock, Paper, Scissors, Gun Game*|")
-        print("|---------------------------------|")
-        print("| 1. Start Game                   |")
-        print("| 2. Scoreboard                   |")
-        print("| 3. Instructions                 |")
-        print("| 4. Credits                      |")
-        print("-----------------------------------")
+        print("===================================")
+        print("|         Welcome to the           |")
+        print("|  * Rock, Paper, Scissors, Gun *  |")
+        print("|              Game!               |")
+        print("|==================================|")
+        print("| 1. Start Game                    |")
+        print("| 2. Scoreboard                    |")
+        print("| 3. Instructions                  |")
+        print("| 4. Credits                       |")
+        print("|==================================|")
 
 
 class Instruction:
@@ -270,16 +272,16 @@ class Credits:
         author1 = "Ngoc Hong (Mi)"
         author2 = "Chris Lubert"
         author3 = "Daniel Jönsson"
-        print("-----------------------------------")
+        print("===================================")
         print("|           *Credits*             |")
-        print("|---------------------------------|")
+        print("===================================")
         print("|© HKR 2024 - All rights reserved.|")
-        print("|---------------------------------|")
+        print("===================================")
         print("|          Created by:            |")
         print(f"|-{author1}                  |")
         print(f"|-{author2}                    |")
         print(f"|-{author3}                  |")
-        print("-----------------------------------")
+        print("===================================")
         print("Thank you for playing!")
 
 
