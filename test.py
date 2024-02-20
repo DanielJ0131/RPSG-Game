@@ -20,22 +20,27 @@ def test_init_default_objects():
     }
 
 
-def test_roll_a_dice():
+def test_roll_a_dice(self):
     """Test the roll_a_dice function"""
-    # assert main.dice_roll in range(1, 7)
-    # self.assertEqual(player.choice, None)
-    # self.assertIn(computer.choice, ["Rock", "Paper", "Scissors", "Gun"])
-    # self.assertIsInstance(game.switch, dict)
-    # "White Box Testing"
-    # self.assertEqual(main.dice_roll, 1)
-    # expected = 1
-    # result = 1
-    # self.assertEqual(res
-    # actual = main.dice_roll
-    # test_addition(expected, actual)
-    # good to call these functions "test" because it's a test file
+    assert main.Game().roll_dice in range(1, 7)
+    self.assertEqual(main.Game().roll_dice, 1)
+    self.assertEqual(main.Game().roll_dice, 2)
+    self.assertEqual(main.Game().roll_dice, 3)
+    self.assertEqual(main.Game().roll_dice, 4)
+    self.assertEqual(main.Game().roll_dice, 5)
+    self.assertEqual(main.Game().roll_dice, 6)
 
 
-def unittest_skip():
-    """Test the skip function"""
-    # self.skipTest("Skip this test")
+def test_game_functions(self):
+    """Tests the game functions"""
+    player = main.Player()
+    computer = main.Computer()
+    game = main.Game()
+    self.assertEqual(player.choice, None)
+    self.assertIn(computer.choice, ["Rock", "Paper", "Scissors", "Gun"])
+    self.assertIsInstance(game.switch, dict)
+    self.assertEqual(game.switch, {
+        "Rock": "Scissors",
+        "Paper": "Rock",
+        "Scissors": "Paper",
+    })
