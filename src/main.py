@@ -21,7 +21,7 @@ def main():
                         break
                     elif answer == "no" or answer == "n":
                         continue
-                rounds = 5
+                rounds = 3  # <----------------Change the number of rounds here
                 Game().play(rounds)
 
             case "2":
@@ -169,7 +169,7 @@ class Game:
             time.sleep(2)
             game.print_stats()
 
-        elif rematch == "yes" or rematch == "y":
+        else:
             print("Rematch!")
             time.sleep(2)
             game.reset_stats()
@@ -212,7 +212,7 @@ class GameStats:
         print(f"Tie count: {self.tiecount}")
         time.sleep(0.5)
         print(f"Lose count: {self.losecount}")
-        time.sleep(0.5)
+        time.sleep(5)
 
     def reset_stats(self):
         """Reset the game stats."""
