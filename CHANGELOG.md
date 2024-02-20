@@ -10,7 +10,7 @@ v1.3.0 (2024-02-20)
 
 
 
-v1.2.0 (2024-02-19)
+v1.2.0 (2024-02-18)
 ------------------------
 
 * Adds Instructions and fixes Pylint and Flake8 Issues
