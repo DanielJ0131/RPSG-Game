@@ -3,14 +3,14 @@ Changelog and revision history
 
 
 
-v2.0.0 (2022-02-05)
+v1.2.0 (2024-02-16)
 ------------------------
 
-* Moved to a new location.
+* New classes, new functions
 
 
 
-v1.1.0 (2021-02-12)
+v1.1.0 (2024-02-13)
 ------------------------
 
 * Enabling generating documentation from comments using pdoc and pydoc.
@@ -18,7 +18,7 @@ v1.1.0 (2021-02-12)
 
 
 
-v1.0.0 (2021-02-12)
+v1.0.0 (2021-02-10)
 ------------------------
 
-* First release, extracted from course material and further developed.
+* First release, first simple program
