@@ -4,6 +4,9 @@
 class Credits:
     """Credits Class."""
 
+    def __init__(self):
+        """Initializes the Credits class."""
+
     def draw(self):
         """Draws the game credits and authors."""
         author1 = "Ngoc Hong (Mi)"
