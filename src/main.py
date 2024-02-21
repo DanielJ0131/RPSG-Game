@@ -16,11 +16,9 @@ def main():
                     player_name = input("Enter player name: ")
                     print(f"\nAre you happy with the name: {player_name}?")
                     answer = input("yes/no: ").lower()
-                    if answer == "yes" or answer == "y":
+                    if answer in ["yes", "y"]:
                         lst.append(player_name)
                         break
-                    elif answer == "no" or answer == "n":
-                        continue
                 rounds = 3  # <----------------Change the number of rounds here
                 Game().play(rounds)
 
@@ -161,7 +159,7 @@ class Game:
 
         rematch = input("\nWanna play again? , yes/no: ")
 
-        if rematch == "no" or rematch == "n":
+        if rematch.lower() in ["no", "n"]:
             print("Good game :)")
 
             # Game stats #
