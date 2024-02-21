@@ -151,7 +151,6 @@ class Game:
 
     def announce_winner(self, game, best_of_rounds):
         """Check who is the winner."""
-
         print("\nWe have a winner!")
         time.sleep(1)
         if game.wincount >= best_of_rounds:
