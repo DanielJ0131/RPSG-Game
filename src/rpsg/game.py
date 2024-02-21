@@ -1,9 +1,9 @@
 """Game Module."""
 import time  # Import the time module to add a delay to the game.
 import random
-from player_module import Player
-from computer_module import Computer
-from gamestats_module import GameStats
+from player import Player
+from computer import Computer
+from gamestats import GameStats
 
 
 class Game:

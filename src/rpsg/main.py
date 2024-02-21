@@ -1,11 +1,11 @@
 """This is the main file for the Rock, Paper, Scissors, Gun Game."""
 
 # Import the other modules.
-from game_module import Game
-from menu_module import Menu
-from instructions_module import Instruction
-from scoreboard_module import Scoreboard
-from credits_module import Credits
+from game import Game
+from menu import Menu
+from instructions import Instruction
+from scoreboard import Scoreboard
+from credits import Credits
 
 
 def main():
