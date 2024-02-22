@@ -34,7 +34,6 @@ def main():
                 continue
             case "4":
                 Credits().draw()
-                print("Chris älskar Andreas")
                 break
 
 
