@@ -34,7 +34,7 @@ def main():
                 continue
             case "4":
                 Credits().draw()
-                print("Chris älskar ChatGPT")
+                print("Chris älskar Andreas")
                 break
 
 
