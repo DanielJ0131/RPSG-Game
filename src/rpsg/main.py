@@ -6,7 +6,7 @@ from menu import Menu
 from instructions import Instruction
 from scoreboard import Scoreboard
 from credits import Credits
-
+#Just a test text --------------------------->ß
 
 def main():
     """Use the main function."""
