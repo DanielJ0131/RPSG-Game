@@ -1,4 +1,4 @@
-"""Test File for Unit Testing Code"""
+"""Test File for Unit Testing Code."""
 from player import Player
 from game import Game
 from computer import Computer
@@ -9,7 +9,7 @@ from computer import Computer
 
 
 def test_init_default_objects():
-    """Test the default objects"""
+    """Test the default objects."""
     player = Player()
     computer = Computer()
     game = Game()
@@ -23,7 +23,7 @@ def test_init_default_objects():
 
 
 def test_roll_a_dice(self):
-    """Test the roll_a_dice function"""
+    """Test the roll_a_dice function."""
     assert Game().roll_dice in range(1, 7)
     self.assertEqual(Game().roll_dice, 1)
     self.assertEqual(Game().roll_dice, 2)
@@ -34,7 +34,7 @@ def test_roll_a_dice(self):
 
 
 def test_game_functions(self):
-    """Tests the game functions"""
+    """Test the game functions."""
     player = Player()
     computer = Computer()
     game = Game()
