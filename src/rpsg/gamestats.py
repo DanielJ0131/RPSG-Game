@@ -1,4 +1,5 @@
 """GameStats Module."""
+
 import time  # Import the time module to add a delay to the game.
 
 

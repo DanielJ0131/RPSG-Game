@@ -1,7 +1,9 @@
 """Test File for Unit Testing Code."""
+
 from player import Player
 from game import Game
 from computer import Computer
+
 # python -m unittest --help
 # python -m unittest discover
 # python -m unittest discover -v
@@ -41,8 +43,11 @@ def test_game_functions(self):
     self.assertEqual(player.choice, None)
     self.assertIn(computer.choice, ["Rock", "Paper", "Scissors", "Gun"])
     self.assertIsInstance(game.switch, dict)
-    self.assertEqual(game.switch, {
-        "Rock": "Scissors",
-        "Paper": "Rock",
-        "Scissors": "Paper",
-    })
+    self.assertEqual(
+        game.switch,
+        {
+            "Rock": "Scissors",
+            "Paper": "Rock",
+            "Scissors": "Paper",
+        },
+    )

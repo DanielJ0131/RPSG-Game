@@ -20,4 +20,4 @@ class Instruction:
               9. The score will show you the results at the end of the rounds.
               10. You can either beat the computer, lose or play again.
               """
-            )
+        )

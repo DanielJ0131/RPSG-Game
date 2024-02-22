@@ -1,4 +1,5 @@
 """Game Module."""
+
 import time  # Import the time module to add a delay to the game.
 import random
 from player import Player
@@ -43,8 +44,7 @@ class Game:
             # If the computer chose Gun, the player has to roll the dice.
             elif computer == "Gun":
                 print(
-                    "The computer chose Gun! " +
-                    "Roll the dice to see if you survive! "
+                    "The computer chose Gun! " + "Roll the dice to see if you survive! "
                 )
                 self.roll_dice(game, player)
                 time.sleep(1)
@@ -61,8 +61,7 @@ class Game:
                 game.win()
                 time.sleep(1)
 
-            if (game.wincount >= best_of_rounds or
-               game.losecount >= best_of_rounds):
+            if game.wincount >= best_of_rounds or game.losecount >= best_of_rounds:
                 self.announce_winner(game, best_of_rounds)
                 time.sleep(1)
 
