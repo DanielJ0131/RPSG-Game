@@ -14,13 +14,8 @@ Add Score result to players list to be able to pickle dump result!
 
 3. Unit testing!
 
-4. venv, all errors/problems fixing - https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/python-venv.md GOOD LINK!
+4. venv, all errors/problems fixing
 
-5. Better Animations after Win/ Tie / Loss
-
-6. Can type y/n instead of yes/no
-
-7. Better newlines \n after every print
 
 -------------------------------------------------------------------------------------------
 
