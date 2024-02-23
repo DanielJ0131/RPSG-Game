@@ -16,7 +16,6 @@ Add Score result to players list to be able to pickle dump result!
 
 4. venv, all errors/problems fixing
 
-
 -------------------------------------------------------------------------------------------
 
 Chris Suggestions:
