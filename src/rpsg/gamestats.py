@@ -12,6 +12,7 @@ class GameStats:
         self.losecount = 0
         self.tiecount = 0
         self.gamecount = 0
+        self.winfast = 0
         self.best_of_rounds = best_of_rounds
     
     def fast_win(self, best_of_rounds):
