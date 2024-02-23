@@ -1,32 +1,32 @@
-To do List - Examination 2
+To do List - Examination2
 
 Please add onto the list if you want some improvements or have some nice suggestions!
 
 ------------------------------------------------------------------------------------------
 Daniels Suggestions:
 
-
 1. Make Players able to import an old/new Scoreboard with pickle.load and pickle.dump on the players list!
 
-
-2. Print Scoreboard after every Win / Tie / Loss
+2. Print Scoreboard after every Win / Tie / Loss.
 Add Score result to players list to be able to pickle dump result!
 
 3. Unit testing!
 
-4. venv, all errors/problems fixing
+4. venv, all errors/problems fixing.
+
+5. Fill in the "docs" folder to improve documentation.
 
 -------------------------------------------------------------------------------------------
-
 Chris Suggestions:
-1. Chris will keep up the good work!
--------------------------------------------------------------------------------------------
 
+1. Chris will keep up the good work!
+
+-------------------------------------------------------------------------------------------
 Mis Suggestions:
+
 1. Mi will start coding soon!
 2. förbättring: lägga till nivå
 3. lista på alla spelare
 4. Must work soon!!!!!! 
-
 
 -------------------------------------------------------------------------------------------
