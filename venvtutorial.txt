@@ -1,6 +1,6 @@
 """This is a tutorial on how to use .venv for LINTING, CODESTYLE, COVERAGE and UNITTEST"""
 
-PREREQUISITES - (Don't do these parts Chris, we have done it already!)
+PREREQUISITES - (Don't do these parts Chris, we have done it already! I can see that ;)/Chris)
 *Get the Makefile from Mikaels repository "oopython"
 *Get the requirements.txt from Mikaels repository
 
