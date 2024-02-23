@@ -17,26 +17,38 @@ class Game:
             "Paper": "Rock",
             "Scissors": "Paper",
         }
+        self.player_choice = None
 
     def play(self, rounds):
         """Play the game."""
         print("\nWelcome to Rock, Paper, Scissors, Gun!")
         best_of_rounds = (rounds // 2) + 1
 
-        game = GameStats()
 
-        while (game.wincount or game.losecount) < best_of_rounds:
+        game = GameStats(best_of_rounds)
+
+        while (game.wincount or game.losecount or game.winfast) < best_of_rounds:
             game.add_count()
 
             # Player and Computer choices #
-            player = Player().choice
+            self.player_choice = Player().choice
             computer = Computer().choice
-            print(f"Computer chose: {computer}!")
-            time.sleep(1)
+            
 
             # Game Logic #
             # If the player and computer chose the same thing, it's a tie.
-            if player == computer:
+            
+            if self.player_choice == "Gun":
+                print("I give up, you win, I do not want to play!!!")
+                game.winfast += best_of_rounds
+                self.announce_winner(game,best_of_rounds)
+                time.sleep(1)
+                break
+
+            print(f"Computer chose: {computer}!")
+            time.sleep(1)
+            
+            if self.player_choice == computer:
                 print("It's a tie!")
                 game.tie()
                 time.sleep(1)
@@ -44,13 +56,14 @@ class Game:
             # If the computer chose Gun, the player has to roll the dice.
             elif computer == "Gun":
                 print(
-                    "The computer chose Gun! " + "Roll the dice to see if you survive! "
+                    "The computer chose Gun! " +
+                    "Roll the dice to see if you survive! "
                 )
-                self.roll_dice(game, player)
+                self.roll_dice(game, self.player_choice)
                 time.sleep(1)
 
             # If the player chose the losing choice, they lose.
-            elif player == self.switch[computer]:
+            elif self.player_choice == self.switch[computer]:
                 print("You lose!")
                 game.lose()
                 time.sleep(1)
@@ -61,7 +74,8 @@ class Game:
                 game.win()
                 time.sleep(1)
 
-            if (game.wincount, game.losecount) >= best_of_rounds:
+            if game.wincount >= best_of_rounds \
+               or game.losecount >= best_of_rounds:
                 self.announce_winner(game, best_of_rounds)
                 time.sleep(1)
 
@@ -110,7 +124,10 @@ class Game:
         rematch = input("\nWanna play again? , yes/no: ")
 
         if rematch.lower() in ["no", "n"]:
-            print("Good game :)")
+            if self.player_choice == "Gun":
+                print("(WARNING: You cheated in this game >:C)")  
+            else:
+                print("Good game :)")
 
             # Game stats #
             time.sleep(2)
@@ -120,3 +137,6 @@ class Game:
             print("Rematch!")
             time.sleep(2)
             game.reset_stats()
+            
+        
+

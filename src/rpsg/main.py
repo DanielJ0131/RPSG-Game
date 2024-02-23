@@ -7,7 +7,7 @@ from instructions import Instruction
 from scoreboard import Scoreboard
 from credits import Credits
 
-# Just a test text --------------------------->
+
 
 
 def main():
@@ -25,7 +25,7 @@ def main():
                     if answer in ["yes", "y"]:
                         lst.append(player_name)
                         break
-                rounds = 3  # <----------------Change the number of rounds here
+                rounds = 9
                 Game().play(rounds)
 
             case "2":
