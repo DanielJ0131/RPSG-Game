@@ -1,0 +1,33 @@
+"""This is a tutorial on how to use .venv for LINTING specifically."""
+
+PREREQUISITES - (Don't do these parts Chris, we have done it already!)
+*Get the Makefile from Mikaels repository "oopython"
+*Get the requirements.txt from Mikaels repository
+
+1. Open Directory in Terminal, write (cd Examination2)
+
+2. Create the virtual environment with help of our given Makefile. In the Terminal, write (make venv)
+
+3. Activate the venv, write for Windows (. .venv/Scripts/activate) and for Mac/Linux (. .venv/bin/activate)
+
+4. Install the virtual packages in venv. write (make install)
+
+5. Check the installed virtual packages (make installed)
+
+TIME FOR LINTING!
+
+6. Check flake8 errors (make flake8)
+
+7. Check Pylint errors + Code score (make pylint)
+
+ENFORCE SPECIFIC CODE STYLES
+
+8. Use the black style (make black)
+
+9. Use the codestyle (make codestyle)
+
+UNIT TESTS AND CODE COVERAGE
+
+10. make unittest
+
+11. make coverage
