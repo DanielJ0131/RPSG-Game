@@ -8,8 +8,6 @@ from scoreboard import Scoreboard
 from credits import Credits
 
 
-
-
 def main():
     """Use the main function."""
     lst = []

@@ -24,30 +24,28 @@ class Game:
         print("\nWelcome to Rock, Paper, Scissors, Gun!")
         best_of_rounds = (rounds // 2) + 1
 
-
         game = GameStats(best_of_rounds)
 
-        while (game.wincount or game.losecount or game.winfast) < best_of_rounds:
+        while (game.wincount or game.losecount) < best_of_rounds:
             game.add_count()
 
             # Player and Computer choices #
             self.player_choice = Player().choice
             computer = Computer().choice
-            
 
             # Game Logic #
             # If the player and computer chose the same thing, it's a tie.
-            
+
             if self.player_choice == "Gun":
                 print("I give up, you win, I do not want to play!!!")
                 game.fast_win(best_of_rounds)
-                self.announce_winner(game,best_of_rounds)
+                self.announce_winner(game, best_of_rounds)
                 time.sleep(1)
                 break
 
             print(f"Computer chose: {computer}!")
             time.sleep(1)
-            
+
             if self.player_choice == computer:
                 print("It's a tie!")
                 game.tie()
@@ -125,7 +123,7 @@ class Game:
 
         if rematch.lower() in ["no", "n"]:
             if self.player_choice == "Gun":
-                print("(WARNING: You cheated in this game >:C)")  
+                print("(WARNING: You cheated in this game >:C)")
             else:
                 print("Good game :)")
 
@@ -137,6 +135,3 @@ class Game:
             print("Rematch!")
             time.sleep(2)
             game.reset_stats()
-            
-        
-
