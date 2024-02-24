@@ -23,3 +23,6 @@ class Credits:
         print(f"|-{author3}                  |")
         print("===================================")
         print("Thank you for playing!")
+
+    def __str__(self):
+        return "Credits"

@@ -17,7 +17,6 @@ class Game:
             "Paper": "Rock",
             "Scissors": "Paper",
         }
-        self.player_choice = None
 
     def play(self, rounds):
         """Play the game."""
@@ -30,13 +29,13 @@ class Game:
             game.add_count()
 
             # Player and Computer choices #
-            self.player_choice = Player().choice
-            computer = Computer().choice
+            player = Player().set_choice()
+            computer = Computer().set_choice()
 
             # Game Logic #
             # If the player and computer chose the same thing, it's a tie.
 
-            if self.player_choice == "Gun":
+            if player == "Gun":
                 print("I give up, you win, I do not want to play!!!")
                 game.win()
                 self.announce_winner(game, best_of_rounds)
@@ -46,7 +45,7 @@ class Game:
             print(f"Computer chose: {computer}!")
             time.sleep(1)
 
-            if self.player_choice == computer:
+            if player == computer:
                 print("It's a tie!")
                 game.tie()
                 time.sleep(1)
@@ -57,11 +56,11 @@ class Game:
                     "The computer chose Gun! " +
                     "Roll the dice to see if you survive! "
                 )
-                self.roll_dice(game, self.player_choice)
+                self.roll_dice(game, player)
                 time.sleep(1)
 
             # If the player chose the losing choice, they lose.
-            elif self.player_choice == self.switch[computer]:
+            elif player == self.switch[computer]:
                 print("You lose!")
                 game.lose()
                 time.sleep(1)
@@ -122,7 +121,7 @@ class Game:
         rematch = input("\nWanna play again? , yes/no: ")
 
         if rematch.lower() in ["no", "n"]:
-            if self.player_choice == "Gun":
+            if Player().get_choice() == "Gun":
                 print("(WARNING: You cheated in this game >:C)")
             else:
                 print("Good game :)")

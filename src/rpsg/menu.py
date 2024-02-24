@@ -16,3 +16,6 @@ class Menu:
         print("| 3. Instructions                  |")
         print("| 4. Credits                       |")
         print("|==================================|")
+
+    def __str__(self):
+        return "Menu"

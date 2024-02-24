@@ -4,6 +4,9 @@
 class Instruction:
     """Instruction Class."""
 
+    def __init__(self):
+        """Init for the Instruction Class."""
+
     def draw(self):
         """Draws the game Instruction."""
         print(
@@ -21,3 +24,6 @@ class Instruction:
               10. You can either beat the computer, lose or play again.
               """
         )
+
+    def __str__(self):
+        return "Instruction"
