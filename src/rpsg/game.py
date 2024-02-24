@@ -38,7 +38,7 @@ class Game:
 
             if self.player_choice == "Gun":
                 print("I give up, you win, I do not want to play!!!")
-                game.fast_win(best_of_rounds)
+                game.win()
                 self.announce_winner(game, best_of_rounds)
                 time.sleep(1)
                 break
