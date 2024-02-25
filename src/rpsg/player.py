@@ -18,6 +18,7 @@ class Player:
             print('\nChoose "Rock", "Paper", "Scissors" to play!')
             self.choice = input("\nEnter your choice >>> ").lower()
             if self.choice in ["r","p","s","g","rock","paper","scissors","gun"]:
+                
                 if self.choice == "r":
                     self.choice = "rock"
                     return self.choice

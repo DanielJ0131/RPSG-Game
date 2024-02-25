@@ -40,7 +40,8 @@ class Game:
                 game.win()
                 game.fast_win()
                 self.announce_winner(game, best_of_rounds)
-                time.sleep(1)
+                print("(You have been banished from this game and have to reset)")
+                time.sleep(5)
                 break
 
             print(f"Computer chose: {computer}!")
@@ -121,8 +122,10 @@ class Game:
         
         elif game.winfast >= best_of_rounds:
             print("\nand it's the user")
-
+        
+   
         rematch = input("\nWanna play again? , yes/no: ")
+            
 
         if rematch.lower() in ["no", "n"]:
             if game.winfast >= best_of_rounds:
