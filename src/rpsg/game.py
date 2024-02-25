@@ -38,6 +38,7 @@ class Game:
             if player == "Gun":
                 print("I give up, you win, I do not want to play!!!")
                 game.win()
+                game.fast_win()
                 self.announce_winner(game, best_of_rounds)
                 time.sleep(1)
                 break
@@ -117,11 +118,14 @@ class Game:
 
         elif game.losecount >= best_of_rounds:
             print("\nand it's the computer!")
+        
+        elif game.winfast >= best_of_rounds:
+            print("\nand it's the user")
 
         rematch = input("\nWanna play again? , yes/no: ")
 
         if rematch.lower() in ["no", "n"]:
-            if Player().get_choice() == "Gun":
+            if game.winfast >= best_of_rounds:
                 print("(WARNING: You cheated in this game >:C)")
             else:
                 print("Good game :)")
