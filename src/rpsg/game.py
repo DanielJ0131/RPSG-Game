@@ -13,9 +13,9 @@ class Game:
     def __init__(self):
         """Init for the Game Class."""
         self.switch = {
-            "Rock": "Scissors",
-            "Paper": "Rock",
-            "Scissors": "Paper",
+            "rock": "scissors",
+            "paper":"rock",
+            "scissors":"paper",
         }
 
     def play(self, rounds):
@@ -35,7 +35,7 @@ class Game:
             # Game Logic #
             # If the player and computer chose the same thing, it's a tie.
 
-            if player == "Gun":
+            if player == "gun":
                 print("I give up, you win, I do not want to play!!!")
                 game.win()
                 game.fast_win()
@@ -52,7 +52,7 @@ class Game:
                 time.sleep(1)
 
             # If the computer chose Gun, the player has to roll the dice.
-            elif computer == "Gun":
+            elif computer == "gun":
                 print(
                     "The computer chose Gun! " +
                     "Roll the dice to see if you survive! "
@@ -96,13 +96,13 @@ class Game:
 
         if dice >= 4:
             game.win()
-            if player == "Scissors":
+            if player == "scissors":
                 print("You cut the Gun in half and won!")
 
-            elif player == "Rock":
+            elif player == "rock":
                 print("You smashed the Gun and won!")
 
-            elif player == "Paper":
+            elif player == "paper":
                 print("You pushed the Paper into " + "the Gun and won!")
 
         else:

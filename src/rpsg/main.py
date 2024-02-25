@@ -23,7 +23,7 @@ def main():
                     if answer in ["yes", "y"]:
                         lst.append(player_name)
                         break
-                rounds = 3
+                rounds = 9
                 Game().play(rounds)
 
             case "2":
