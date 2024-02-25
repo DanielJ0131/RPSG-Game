@@ -17,7 +17,7 @@ class GameStats:
 
     def fast_win(self):
         """Fast win count"""
-        self.winfast += 9
+        self.winfast += 100
 
     def win(self):
         """Win Count function."""
