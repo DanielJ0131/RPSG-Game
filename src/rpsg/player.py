@@ -20,12 +20,18 @@ class Player:
             match self.choice:
                 case "rock"|"r":
                     self.choice = "rock"
+                    return self.choice
                 case "paper"|"p":
                     self.choice = "paper"
+                    return self.choice
                 case "scissors"|"s":
                     self.choice = "scissors"
+                    return self.choice
                 case "gun"|"g":
                     self.choice = "gun"
-            return self.choice
+                    return self.choice
+                case _:
+                    print()
+        
 
       
