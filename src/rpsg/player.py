@@ -17,20 +17,15 @@ class Player:
         while self.choice not in ["Rock", "Paper", "Scissors", "Gun"]:
             print('\nChoose "Rock", "Paper", "Scissors" to play!')
             self.choice = input("\nEnter your choice >>> ").lower()
-            if self.choice in ["r", "p", "s", "g", "rock",
-                               "paper", "scissors", "gun"]:
-
-                if self.choice == "r":
+            match self.choice:
+                case "rock"|"r":
                     self.choice = "rock"
-
-                elif self.choice == "p":
+                case "paper"|"p":
                     self.choice = "paper"
-
-                elif self.choice == "s":
+                case "scissors"|"s":
                     self.choice = "scissors"
-
-                elif self.choice == "g":
+                case "gun"|"g":
                     self.choice = "gun"
+            return self.choice
 
-                else:
-                    return self.choice
+      
