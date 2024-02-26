@@ -27,7 +27,8 @@ def main():
                 Game().play(rounds)
 
             case "2":
-                Scoreboard().draw(lst)
+                lst2 = ["Mi", "Daniel", "Chrisi"]
+                Scoreboard().draw(lst2)
                 continue
             case "3":
                 Instruction().draw()

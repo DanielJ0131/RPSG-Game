@@ -14,17 +14,14 @@ class Scoreboard:
         print("===================================")
         print("|           *Scoreboard*           |")
         print("===================================")
-        print("|Win count           Player names  |")
+        print("| Player names           Win count |")
         print("===================================")
         for player in players:
-            print(player)
+            print(f"| {player:32} |")
             
-        print(f"|                  |")
-        print(f"|                  |")
-        print(f"|                  |")
         print("===================================")
-        print("Thank you for playing!")
-         # <-------------------- here is a list of players
+        print("\n")
+         
 
 
 
