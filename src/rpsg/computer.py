@@ -1,4 +1,5 @@
 """Computer Module."""
+
 import random
 
 
@@ -17,5 +18,5 @@ class Computer:
         """Set the computer's choice."""
         self.choice = random.choices(
             ["rock", "paper", "scissors", "gun"], weights=[0.3, 0.3, 0.3, 0.1]
-            )[0]
+        )[0]
         return self.choice

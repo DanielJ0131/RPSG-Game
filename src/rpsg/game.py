@@ -14,8 +14,8 @@ class Game:
         """Init for the Game Class."""
         self.switch = {
             "rock": "scissors",
-            "paper":"rock",
-            "scissors":"paper",
+            "paper": "rock",
+            "scissors": "paper",
         }
 
     def play(self, rounds):
@@ -55,8 +55,7 @@ class Game:
             # If the computer chose Gun, the player has to roll the dice.
             elif computer == "gun":
                 print(
-                    "The computer chose Gun! " +
-                    "Roll the dice to see if you survive! "
+                    "The computer chose Gun! " + "Roll the dice to see if you survive! "
                 )
                 self.roll_dice(game, player)
                 time.sleep(1)
@@ -73,8 +72,7 @@ class Game:
                 game.win()
                 time.sleep(1)
 
-            if game.wincount >= best_of_rounds \
-               or game.losecount >= best_of_rounds:
+            if game.wincount >= best_of_rounds or game.losecount >= best_of_rounds:
                 self.announce_winner(game, best_of_rounds)
                 time.sleep(1)
 
@@ -119,13 +117,11 @@ class Game:
 
         elif game.losecount >= best_of_rounds:
             print("\nand it's the computer!")
-        
+
         elif game.winfast >= best_of_rounds:
             print("\nand it's the user")
-        
-   
+
         rematch = input("\nWanna play again? , yes/no: ")
-            
 
         if rematch.lower() in ["no", "n"]:
             if game.winfast >= best_of_rounds:
