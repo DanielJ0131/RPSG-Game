@@ -30,5 +30,8 @@ class Player:
 
                 elif self.choice == "g":
                     self.choice = "gun"
+                
+                else:
+                    print()
 
             return self.choice
