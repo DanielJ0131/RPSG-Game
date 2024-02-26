@@ -13,11 +13,11 @@ class GameStats:
         self.tiecount = 0
         self.gamecount = 0
         self.winfast = 0
-        self.best_of_rounds = best_of_rounds
+        self.winfast = best_of_rounds
 
     def fast_win(self):
         """Fast win count"""
-        self.winfast += 100
+        self.winfast == self.winfast
 
     def win(self):
         """Win Count function."""

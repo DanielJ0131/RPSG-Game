@@ -5,6 +5,7 @@ import random
 from player import Player
 from computer import Computer
 from gamestats import GameStats
+from scoreboard import Scoreboard
 
 
 class Game:
@@ -38,7 +39,7 @@ class Game:
             if player == "gun":
                 print("I give up, you win, I do not want to play!!!")
                 game.win()
-                game.fast_win()
+                
                 self.announce_winner(game, best_of_rounds)
                 print("(You have been banished " +
                       "from this game and have to reset)")
@@ -112,6 +113,7 @@ class Game:
             game.lose()
 
     def announce_winner(self, game, best_of_rounds):
+        list_score = []
         """Check who is the winner."""
         print("\nWe have a winner!")
         time.sleep(1)
@@ -135,6 +137,7 @@ class Game:
             # Game stats #
             time.sleep(2)
             game.print_stats()
+            list_score.append(game.print_stats)
 
         else:
             print("Rematch!")
