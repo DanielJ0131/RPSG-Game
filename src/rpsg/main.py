@@ -18,6 +18,9 @@ def main():
             case "1":
                 while True:
                     player_name = input("Enter player name: ")
+                    if len(player_name) >= 10:
+                        print("(you name is to long!)")
+                        continue
                     print(f"\nAre you happy with the name: {player_name}?")
                     answer = input("yes/no: ").lower()
                     if answer in ["yes", "y"]:
