@@ -18,4 +18,5 @@ class Menu:
         print("|==================================|")
 
     def __str__(self):
+        """Return the class name."""
         return "Menu"

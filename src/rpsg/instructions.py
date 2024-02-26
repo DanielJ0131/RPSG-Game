@@ -16,7 +16,7 @@ class Instruction:
               2. If you have played this game before, skip this tutorial.
               3. To Start, select 1 on the main menu and press enter.
               4. The player will go up against a computer bot.
-              5. The player then has the options Rock, Paper, Scissors or Gun as a cheatcode.
+              5. The player then has the options Rock, Paper, Scissors or Gun.
               6. The computer has a 10% chance of choosing Gun.
               7. Whoever takes the winning choice, wins the round.
               8. This continues until we anyone wins more than 3 rounds.
@@ -26,4 +26,5 @@ class Instruction:
         )
 
     def __str__(self):
+        """Return the class name."""
         return "Instruction"

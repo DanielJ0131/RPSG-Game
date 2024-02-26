@@ -7,7 +7,7 @@ class Scoreboard:
     score = 0
 
     def scorelist(self, name, wincount):
-        """Saves the scores."""
+        """Save the scores."""
 
     def draw(self, players):
         """Draws the game scoreboard."""
@@ -23,4 +23,5 @@ class Scoreboard:
         print("\n")
 
     def __str__(self):
+        """Return the class name."""
         return "Scoreboard"
