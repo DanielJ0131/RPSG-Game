@@ -15,10 +15,6 @@ class GameStats:
         self.winfast = 0
         self.winfast = best_of_rounds
 
-    def fast_win(self):
-        """Fast win count"""
-        self.winfast == self.winfast
-
     def win(self):
         """Win Count function."""
         self.wincount += 1

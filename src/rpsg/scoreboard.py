@@ -1,5 +1,5 @@
 """Scoreboard Module."""
-from gamestats import GameStats
+
 
 class Scoreboard:
     """Scoreboard Class."""
@@ -18,12 +18,9 @@ class Scoreboard:
         print("===================================")
         for player in players:
             print(f"| {player:32} |")
-            
+
         print("===================================")
         print("\n")
-         
-
-
 
     def __str__(self):
         return "Scoreboard"

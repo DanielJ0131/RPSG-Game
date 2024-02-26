@@ -33,6 +33,4 @@ class Player:
                     self.choice = "gun"
 
                 else:
-                    print()
-
-            return self.choice
+                    return self.choice
