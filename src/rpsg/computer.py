@@ -19,4 +19,16 @@ class Computer:
         self.choice = random.choices(
             ["rock", "paper", "scissors", "gun"], weights=[0.3, 0.3, 0.3, 0.1]
         )[0]
+        return self.choice   
+    
+    def easy_choice(self):
+        """Easy mode"""
+        self.choice = "rock"
         return self.choice
+
+    def hard_choice(self):
+        """Advance mode"""
+        self.choice = random.choices(["rock", "paper", "scissors","win"], weights=[0.2, 0.2, 0.2, 0.4,])[0]
+        return self.choice 
+
+    

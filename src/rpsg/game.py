@@ -24,6 +24,7 @@ class Game:
         best_of_rounds = (rounds // 2) + 1
         print("\nWelcome to Rock, Paper, Scissors, Gun!")
         print(f"\nThe game has chosen best of {best_of_rounds} rounds!")
+        mode_option = input("Enter mode Easy, Medium, Hard: ")
 
         game = GameStats()
 
@@ -32,8 +33,13 @@ class Game:
 
             # Player and Computer choices #
             computer = Computer()
-            player.set_choice()
-            computer.set_choice()
+            player.set_choice() 
+            if mode_option == "Easy":
+                computer.easy_choice()
+            elif mode_option == "Medium":
+                computer.set_choice()
+            elif mode_option == "Hard":
+                computer.hard_choice()
 
             # Game Logic #
             print(f"Computer chose: {computer.get_choice().capitalize()}!")
@@ -55,6 +61,11 @@ class Game:
                       "from this game and have to reset)")
                 time.sleep(5)
                 break
+
+            elif (computer.get_choice() == "win"):
+                print("Auto win by computer!")
+                game.lose()
+                time.sleep(1)
 
             # If the computer chose Gun, the player has to roll the dice.
             elif computer.get_choice() == "gun":
