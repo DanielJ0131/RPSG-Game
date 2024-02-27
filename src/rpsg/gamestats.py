@@ -6,14 +6,13 @@ import time  # Import the time module to add a delay to the game.
 class GameStats:
     """GameStats Class."""
 
-    def __init__(self, best_of_rounds):
+    def __init__(self):
         """Init for the GameStats Class."""
         self.wincount = 0
         self.losecount = 0
         self.tiecount = 0
         self.gamecount = 0
-        self.winfast = 0
-        self.winfast = best_of_rounds
+        self.cheat = False
 
     def win(self):
         """Win Count function."""
@@ -50,4 +49,4 @@ class GameStats:
         self.losecount = 0
         self.tiecount = 0
         self.gamecount = 0
-        self.winfast = 0
+        self.cheat = True

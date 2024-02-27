@@ -1,5 +1,7 @@
 """Instructions Module."""
 
+import time
+
 
 class Instruction:
     """Instruction Class."""
@@ -24,6 +26,7 @@ class Instruction:
               10. You can either beat the computer, lose or play again.
               """
         )
+        time.sleep(5)
 
     def __str__(self):
         """Return the class name."""

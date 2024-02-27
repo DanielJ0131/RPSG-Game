@@ -3,6 +3,7 @@
 # Import the other modules.
 from game import Game
 from menu import Menu
+from player import Player
 from instructions import Instruction
 from scoreboard import Scoreboard
 from credits import Credits
@@ -10,28 +11,18 @@ from credits import Credits
 
 def main():
     """Use the main function."""
-    lst = []
+    player = Player()
     while True:
         Menu().draw()
         choice = input("\nEnter your choice >>> ")
         match choice:
             case "1":
-                while True:
-                    player_name = input("Enter player name: ")
-                    if len(player_name) >= 10:
-                        print("(you name is to long!)")
-                        continue
-                    print(f"\nAre you happy with the name: {player_name}?")
-                    answer = input("yes/no: ").lower()
-                    if answer in ["yes", "y"]:
-                        lst.append(player_name)
-                        break
+                player.set_name()
                 rounds = 9
-                Game().play(rounds)
-
+                Game().play(rounds, player)
+                continue
             case "2":
-                lst2 = ["Mi", "Daniel", "Chrisi"]
-                Scoreboard().draw(lst2)
+                Scoreboard().draw()
                 continue
             case "3":
                 Instruction().draw()
