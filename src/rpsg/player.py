@@ -18,20 +18,19 @@ class Player:
             print('\nChoose "Rock", "Paper", "Scissors" to play!')
             self.choice = input("\nEnter your choice >>> ").lower()
             match self.choice:
-                case "rock"|"r":
+                case "rock" | "r":
                     self.choice = "rock"
                     return self.choice
-                case "paper"|"p":
+                case "paper" | "p":
                     self.choice = "paper"
                     return self.choice
-                case "scissors"|"s":
+                case "scissors" | "s":
                     self.choice = "scissors"
                     return self.choice
-                case "gun"|"g":
+                case "gun" | "g":
                     self.choice = "gun"
                     return self.choice
                 case _:
-                    print()
-        
-
-      
+                    self.choice = None
+                    print("Invalid choice, try again!")
+                    continue
