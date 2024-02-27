@@ -9,6 +9,8 @@ Daniels Suggestions:
 
 2. Unit testing!
 
+3. Sort the scoreboard names according to their win count.
+
 
 -------------------------------------------------------------------------------------------
 Chris Suggestions:
