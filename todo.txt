@@ -5,21 +5,16 @@ Please add onto the list if you want some improvements or have some nice suggest
 ------------------------------------------------------------------------------------------
 Daniels Suggestions:
 
-1. Make Players able to import an old/new Scoreboard with pickle.load and pickle.dump on the players list!
+1. Print Scoreboard after every Win / Tie / Loss.
 
-2. Print Scoreboard after every Win / Tie / Loss.
-Add Score result to players list to be able to pickle dump result!
+2. Unit testing!
 
-3. Unit testing!
-
-4. venv, all errors/problems fixing.
-
-5. Fill in the "docs" folder to improve documentation.
 
 -------------------------------------------------------------------------------------------
 Chris Suggestions:
 
-1. Chris will keep up the good work!
+1. Fill in the "docs" folder to improve documentation.
+
 
 -------------------------------------------------------------------------------------------
 Mis Suggestions:
