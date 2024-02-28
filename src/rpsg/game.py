@@ -54,7 +54,7 @@ class Game:
             # If the player cheats and uses gun, they win.
             elif (player.get_choice()) == "gun":
                 print("I give up, you win, I do not want to play!!!")
-                game.cheat = True
+                game.cheat()
                 game.win()
                 self.announce_winner(game, best_of_rounds, player)
                 print("(You have been banished " + "from this game and have to reset)")
