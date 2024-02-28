@@ -22,12 +22,12 @@ class Computer:
         return self.choice
 
     def easy_choice(self):
-        """Easy mode"""
+        """Choose easy choice."""
         self.choice = "rock"
         return self.choice
 
     def hard_choice(self):
-        """Advance mode"""
+        """Choose hard choice."""
         self.choice = random.choices(
             ["rock", "paper", "scissors", "win"],
             weights=[

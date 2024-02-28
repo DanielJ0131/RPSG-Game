@@ -25,4 +25,5 @@ class Credits:
         print("Thank you for playing!")
 
     def __str__(self):
+        """Return the name of the class."""
         return "Credits"
