@@ -24,7 +24,7 @@ class Game:
         best_of_rounds = (rounds // 2) + 1
         print("\nWelcome to Rock, Paper, Scissors, Gun!")
         print(f"\nThe game has chosen best of {rounds} rounds!")
-        mode_option = input("Enter mode Easy, Medium, Hard: ")
+        mode_option = input("Enter mode: Easy, Medium, Hard >>> ")
 
         game = GameStats()
 
