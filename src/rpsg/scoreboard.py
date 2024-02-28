@@ -27,12 +27,12 @@ class Scoreboard:
     def save_score(self, player, score):
         """Save the scores in a binary file."""
         score_list = [(player, score)]
-        pickle.dump(score_list, open("scoreboard.dat", "ab"))
+        pickle.dump(score_list, open("src/rpsg/scoreboard.dat", "ab"))
 
     def get_score(self):
         """Get the scores from the binary file."""
         try:
-            with open("scoreboard.dat", "rb") as infile:
+            with open("src/rpsg/scoreboard.dat", "rb") as infile:
                 while True:
                     try:
                         score_list = pickle.load(infile)
