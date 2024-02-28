@@ -31,12 +31,11 @@ class Scoreboard:
 
     def save_score(self, player, score):
         """Save the scores in a binary file."""
-        score_list = self.get_score()  # Get the existing scores
-        if score_list is None:
+        if player is None:
             score_list = []
         else:
-            score_list.append((player, score))  # Append the new player score
-        pickle.dump(score_list, open("src/rpsg/scoreboard.dat", "ab"))
+            score_list = [(player, score)]
+            pickle.dump(score_list, open("src/rpsg/scoreboard.dat", "ab"))
 
     def get_score(self):
         """Get the scores from the binary file."""
