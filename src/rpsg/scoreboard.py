@@ -22,9 +22,9 @@ class Scoreboard:
         if stats is None:
             print("| -                      -         |")
         else:
-            stats.sort(key=lambda x: x[1], reverse=True)
-            for name, score in stats:
-                print(f"| {name:22} {score:<9} |")
+            stats = sorted(stats.items(), key=lambda x: x[1], reverse=True)
+            for key, value in stats:
+                print(f"| {key:22} {value:<9} |")
         print("===================================")
         print("\n")
         time.sleep(5)
@@ -32,10 +32,10 @@ class Scoreboard:
     def save_score(self, player, score):
         """Save the scores in a binary file."""
         if player is None:
-            score_list = []
+            score_dict = None
         else:
-            score_list = [(player, score)]
-            pickle.dump(score_list, open("src/rpsg/scoreboard.dat", "ab"))
+            score_dict = {player: score}
+            pickle.dump(score_dict, open("src/rpsg/scoreboard.dat", "ab"))
 
     def get_score(self):
         """Get the scores from the binary file."""
@@ -43,8 +43,8 @@ class Scoreboard:
             with open("src/rpsg/scoreboard.dat", "rb") as infile:
                 while True:
                     try:
-                        score_list = pickle.load(infile)
-                        return score_list
+                        score_dict = pickle.load(infile)
+                        return score_dict
                     except EOFError:
                         break
         except FileNotFoundError:
