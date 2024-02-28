@@ -1,6 +1,6 @@
 """Game Module."""
 
-import time    # Import the time module to add a delay to the game.
+import time  # Import the time module to add a delay to the game.
 import random
 from scoreboard import Scoreboard
 from computer import Computer
@@ -33,7 +33,7 @@ class Game:
 
             # Player and Computer choices #
             computer = Computer()
-            player.set_choice() 
+            player.set_choice()
             if mode_option == "Easy":
                 computer.easy_choice()
             elif mode_option == "Medium":
@@ -57,12 +57,11 @@ class Game:
                 game.cheat = True
                 game.win()
                 self.announce_winner(game, best_of_rounds, player)
-                print("(You have been banished " +
-                      "from this game and have to reset)")
+                print("(You have been banished " + "from this game and have to reset)")
                 time.sleep(5)
                 break
 
-            elif (computer.get_choice() == "win"):
+            elif computer.get_choice() == "win":
                 print("Auto win by computer!")
                 game.lose()
                 time.sleep(1)
@@ -70,8 +69,8 @@ class Game:
             # If the computer chose Gun, the player has to roll the dice.
             elif computer.get_choice() == "gun":
                 print(
-                    "\nThe computer chose Gun! " +
-                    "Roll the dice to see if you survive! "
+                    "\nThe computer chose Gun! "
+                    + "Roll the dice to see if you survive! "
                 )
                 self.roll_dice(game, player)
                 time.sleep(1)
@@ -89,8 +88,7 @@ class Game:
                 time.sleep(1)
 
             # Check if the game is over.
-            if game.wincount >= best_of_rounds or \
-               game.losecount >= best_of_rounds:
+            if game.wincount >= best_of_rounds or game.losecount >= best_of_rounds:
                 self.announce_winner(game, best_of_rounds, player)
                 time.sleep(1)
                 break
