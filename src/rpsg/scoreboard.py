@@ -18,6 +18,9 @@ class Scoreboard:
         print("===================================")
         print("| Player names           Win count |")
         print("===================================")
+        # Sort the stats by win count.
+        stats.sort(key=lambda x: x[1], reverse=True)
+
         for name, score in stats:
             print(f"| {name:22} {score:<9} |")
         print("===================================")
