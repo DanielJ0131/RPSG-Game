@@ -24,10 +24,6 @@ class Scoreboard:
         print("\n")
         time.sleep(5)
 
-    def __str__(self):
-        """Return the class name."""
-        return "Scoreboard"
-
     def save_score(self, player, score):
         """Save the scores in a binary file."""
         score_list = [(player, score)]
