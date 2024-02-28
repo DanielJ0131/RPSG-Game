@@ -155,9 +155,9 @@ class Game:
             # Game stats #
             if game.cheat is False:  # If the player didn't cheat.
                 Scoreboard().save_score(player.get_name(), score)  # Save.
-            time.sleep(2)
+                print("\nScore saved!")
+                time.sleep(2)
             game.print_stats()  # Print the game stats.
-            print("\nScore saved!")
             time.sleep(2)
 
         else:
