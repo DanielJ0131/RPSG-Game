@@ -131,14 +131,12 @@ class Game:
 
         print("\nWe have a winner!")
         time.sleep(1)
-        if game.wincount >= best_of_rounds:
-            print("\nand it's the user!")
 
-        elif game.cheat is True:
-            print("\nand it's the user")
-
-        elif game.losecount >= best_of_rounds:
+        if game.losecount >= best_of_rounds:
             print("\nand it's the computer!")
+
+        else:
+            print("\nand it's the user")
 
         time.sleep(1)
         rematch = input("\nWanna play again? , yes/no: ")
