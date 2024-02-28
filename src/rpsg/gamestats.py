@@ -26,7 +26,7 @@ class GameStats:
         """Tie Count function."""
         self.tiecount += 1
 
-    def cheat(self):
+    def cheater(self):
         """Cheat Count function."""
         self.cheat = True
 
