@@ -1,4 +1,4 @@
-"""Test File for Unit Testing Code."""
+"""Test File for Unit Testing game.py."""
 
 from player import Player
 from game import Game
