@@ -11,7 +11,7 @@ class Scoreboard:
 
     def draw(self):
         """Draws the game scoreboard."""
-        stats = self.get_score()
+        score_dict = self.get_score()
 
         print("===================================")
         print("|           *Scoreboard*           |")
@@ -19,10 +19,11 @@ class Scoreboard:
         print("| Player names           Win count |")
         print("===================================")
         # Sort the stats by win count.
-        if stats is None:
+        if score_dict is None:
             print("| -                      -         |")
         else:
-            stats = sorted(stats.items(), key=lambda x: x[1], reverse=True)
+            stats = sorted(score_dict.items(),
+                           key=lambda x: x[1], reverse=True)
             for key, value in stats:
                 print(f"| {key:22} {value:<9} |")
         print("===================================")
