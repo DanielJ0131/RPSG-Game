@@ -1,5 +1,5 @@
 """Test File for Unit Testing computer.py."""
-from src.rpsg.computer import Computer
+from computer import Computer
 
 
 class ComputerTest:
