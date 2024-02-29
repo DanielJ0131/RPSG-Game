@@ -24,7 +24,9 @@ class Game:
         best_of_rounds = (rounds // 2) + 1
         print("\nWelcome to Rock, Paper, Scissors, Gun!")
         print(f"\nThe game has chosen best of {rounds} rounds!")
-        mode_option = input("Enter mode: Easy, Medium, Hard >>> ")
+        mode_option = None
+        while mode_option not in ["easy", "medium", "hard"]:
+            mode_option = input("Enter mode: Easy, Medium, Hard >>> ").lower()
 
         game = GameStats()
 
@@ -34,11 +36,11 @@ class Game:
             # Player and Computer choices #
             computer = Computer()
             player.set_choice()
-            if mode_option == "Easy":
+            if mode_option == "easy":
                 computer.easy_choice()
-            elif mode_option == "Medium":
+            elif mode_option == "medium":
                 computer.set_choice()
-            elif mode_option == "Hard":
+            elif mode_option == "hard":
                 computer.hard_choice()
 
             # Game Logic #
@@ -62,6 +64,7 @@ class Game:
                 time.sleep(5)
                 break
 
+            # If the computer chose win, it automatically wins.
             elif computer.get_choice() == "win":
                 print("Auto win by computer!")
                 game.lose()
@@ -138,11 +141,13 @@ class Game:
             print("\nand it's the computer!")
 
         else:
-            print("\nand it's the user")
+            print("\nand it's the user!")
 
         time.sleep(1)
         print("\nWanna play again?")
-        rematch = input("(yes/no) >>> ")
+        rematch = None
+        while rematch not in ["yes", "no", "y", "n"]:
+            rematch = input("(yes/no) >>> ")
 
         if rematch.lower() in ["no", "n"]:
             time.sleep(2)
