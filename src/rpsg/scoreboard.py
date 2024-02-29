@@ -35,6 +35,7 @@ class Scoreboard:
         if player is None:
             score_dict = None
         else:
+            score_dict = {}
             score_dict[player] = score
             pickle.dump(score_dict, open("src/rpsg/scoreboard.dat", "ab"))
 
