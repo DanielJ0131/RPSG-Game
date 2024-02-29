@@ -6,7 +6,7 @@ class ComputerTest:
     """Test Class for Computer."""
 
     def __init__(self):
-        """Initialization Method for ComputerTest."""
+        """Initialize Method for ComputerTest."""
         self.computer = Computer()
         self.choice = None
 
