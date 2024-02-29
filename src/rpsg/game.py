@@ -141,7 +141,8 @@ class Game:
             print("\nand it's the user")
 
         time.sleep(1)
-        rematch = input("\nWanna play again? , yes/no: ")
+        print("\nWanna play again?")
+        rematch = input("(yes/no) >>> ")
 
         if rematch.lower() in ["no", "n"]:
             time.sleep(2)

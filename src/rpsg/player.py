@@ -21,7 +21,7 @@ class Player:
                 print("(\nYour name is too long!)")
                 continue
             print(f"\nAre you happy with the name: {self.name}?")
-            answer = input("yes/no: ").lower()
+            answer = input("(yes/no) >>> ").lower()
             if answer in ["yes", "y"]:
                 break
 
