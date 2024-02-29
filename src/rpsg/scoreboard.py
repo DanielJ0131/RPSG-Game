@@ -22,9 +22,9 @@ class Scoreboard:
         if score_dict is None:
             print("| -                      -         |")
         else:
-            stats = sorted(score_dict.items(),
-                           key=lambda x: x[1], reverse=True)
-            for key, value in stats:
+            score_dict = sorted(score_dict.items(),
+                                key=lambda x: x[1], reverse=True)
+            for key, value in score_dict:
                 print(f"| {key:22} {value:<9} |")
         print("===================================")
         print("\n")
