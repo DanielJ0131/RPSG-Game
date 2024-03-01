@@ -1,12 +1,13 @@
 """This is the main file for the Rock, Paper, Scissors, Gun Game."""
 
+# pylint: disable=import-error
 # Import the other modules.
 from game import Game
 from menu import Menu
-from player import Player
 from instructions import Instruction
 from scoreboard import Scoreboard
 from credits import Credits
+from player import Player
 
 
 def main():
