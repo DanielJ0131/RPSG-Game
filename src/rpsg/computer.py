@@ -16,7 +16,10 @@ class Computer:
 
     def set_choice(self):
         """Set the computer's choice."""
-        self.choice = random.choice(["rock", "paper", "scissors", "gun"])
+        self.choice = random.choices(
+            ["rock", "paper", "scissors", "gun"],
+            weights=[0.30, 0.30, 0.30, 0.10],
+        )[0]
         return self.choice
 
     def easy_choice(self):
