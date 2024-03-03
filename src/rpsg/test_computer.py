@@ -3,7 +3,7 @@
 from computer import Computer
 
 
-def set_up(self):
+def test_set_up(self):
     """Set the ComputerTest."""
     self.computer = Computer()
 

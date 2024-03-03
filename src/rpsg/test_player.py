@@ -3,7 +3,7 @@
 from player import Player
 
 
-def set_up(self):
+def test_set_up(self):
     """Set the PlayerTest."""
     self.player = Player()
 
