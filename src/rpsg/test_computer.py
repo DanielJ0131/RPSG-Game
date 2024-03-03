@@ -1,10 +1,12 @@
 """Test File for Unit Testing computer.py."""
+# pylint: disable=import-error
 import unittest
 from computer import Computer
 
 
 def main():
     """Run the test."""
+    ComputerTest().setUp()
     unittest.main()
 
 
