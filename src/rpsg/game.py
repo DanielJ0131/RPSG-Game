@@ -21,21 +21,28 @@ class Game:
 
     def play(self, rounds, player):
         """Play the game."""
+        # Initialize Computer and Rounds #
         computer = Computer()
         time.sleep(1)
         best_of_rounds = (rounds // 2) + 1
         print("\nWelcome to Rock, Paper, Scissors, Gun!")
         print(f"\nThe game has chosen best of {best_of_rounds} rounds!")
 
-        # Choose Difficulty #
-        computer.set_mode()
+        # Choosee Mode #
+        mode = None
+        while mode not in ["easy", "medium", "hard",
+                           "e", "m", "h"]:
+            mode = input("Enter mode: Easy, Medium, Hard >>> ").lower()
+        computer.set_mode(mode)
 
+        # Initialize GameStats #
         game = GameStats()
 
         while (game.wincount or game.losecount) < best_of_rounds:
             game.add_count()
 
             # Player and Computer choices #
+            player.input_choice()
             match computer.mode:
                 case "easy":
                     pass
@@ -44,7 +51,6 @@ class Game:
                 case "hard":
                     computer.hard_choice()
 
-            player.input_choice()
             print(f"Computer chose: {computer.get_choice().capitalize()}!")
             time.sleep(1)
 

@@ -33,9 +33,8 @@ class Computer:
             weights=[0.15, 0.15, 0.15, 0.55],
         )[0]
 
-    def set_mode(self):
+    def set_mode(self, mode):
         """Set the mode."""
-        mode = input("Enter mode: Easy, Medium, Hard >>> ").lower()
         match mode:
             case "easy" | "e":
                 self.mode = "easy"
@@ -44,5 +43,5 @@ class Computer:
             case "hard" | "h":
                 self.mode = "hard"
             case _:
+                self.mode = None
                 print("Invalid mode, try again!")
-                self.set_mode()
