@@ -45,7 +45,7 @@ class Game:
             player.input_choice()
             match computer.mode:
                 case "easy":
-                    pass
+                    computer.easy_choice()
                 case "medium":
                     computer.medium_choice()
                 case "hard":
