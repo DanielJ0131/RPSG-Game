@@ -1,1 +1,1 @@
-"""Init for the main package."""
+"""Init for the test package."""

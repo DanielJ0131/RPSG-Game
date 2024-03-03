@@ -37,12 +37,13 @@ class Game:
             # Player and Computer choices #
             computer = Computer()
             player.set_choice()
-            if mode_option == "easy":
-                computer.easy_choice()
-            elif mode_option == "medium":
-                computer.set_choice()
-            elif mode_option == "hard":
-                computer.hard_choice()
+            match mode_option:
+                case "easy":
+                    computer.easy_choice()
+                case "medium":
+                    computer.set_choice()
+                case "hard":
+                    computer.hard_choice()
 
             # Game Logic #
             print(f"Computer chose: {computer.get_choice().capitalize()}!")
@@ -118,14 +119,15 @@ class Game:
 
         if dice >= 4:
             game.win()
-            if player.get_choice() == "scissors":
-                print("You cut the Gun in half and won!")
+            match player.get_choice():
+                case "scissors":
+                    print("You cut the Gun in half and won!")
 
-            elif player.get_choice() == "rock":
-                print("You smashed the Gun and won!")
+                case "rock":
+                    print("You smashed the Gun and won!")
 
-            elif player.get_choice() == "paper":
-                print("You pushed the Paper into " + "the Gun and won!")
+                case "paper":
+                    print("You pushed the Paper into the Gun and won!")
 
         else:
             print("You lost! Better luck next time.")

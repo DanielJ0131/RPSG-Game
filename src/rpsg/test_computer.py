@@ -1,14 +1,14 @@
 """Test File for Unit Testing computer.py."""
 # pylint: disable=import-error
 import unittest
-from ..computer import Computer
+from computer import Computer
 
 
 class ComputerTest(unittest.TestCase):
     """Test Class for Computer."""
 
     def setUp(self):
-        """Setup for the ComputerTest."""
+        """Set the ComputerTest."""
         self.computer = Computer()
 
     def test_computer(self):
