@@ -1,10 +1,22 @@
 Changelog and revision history
 ========================
 
+
+
+v.1.6.0 (2024-03-03)
+------------------------
+
+* Adds first working unit testing.
+
+
+
+
+
 v1.5.0 (2024-02-27)
 ------------------------
 
 * Adds pickle loading for Scoreboard and also pickle dumps new usernames and their win counts.
+
 
 
 
