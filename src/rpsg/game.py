@@ -21,13 +21,14 @@ class Game:
 
     def play(self, rounds, player):
         """Play the game."""
+        computer = Computer()
         time.sleep(1)
         best_of_rounds = (rounds // 2) + 1
         print("\nWelcome to Rock, Paper, Scissors, Gun!")
-        print(f"\nThe game has chosen best of {rounds} rounds!")
-        mode_option = None
-        while mode_option not in ["easy", "medium", "hard"]:
-            mode_option = input("Enter mode: Easy, Medium, Hard >>> ").lower()
+        print(f"\nThe game has chosen best of {best_of_rounds} rounds!")
+
+        # Choose Difficulty #
+        computer.set_mode()
 
         game = GameStats()
 
@@ -35,19 +36,19 @@ class Game:
             game.add_count()
 
             # Player and Computer choices #
-            computer = Computer()
-            player.set_choice()
-            match mode_option:
+            match computer.mode:
                 case "easy":
-                    computer.easy_choice()
+                    pass
                 case "medium":
-                    computer.set_choice()
+                    computer.medium_choice()
                 case "hard":
                     computer.hard_choice()
 
-            # Game Logic #
+            player.input_choice()
             print(f"Computer chose: {computer.get_choice().capitalize()}!")
             time.sleep(1)
+
+            # Game Logic #
 
             # If the player and computer chose the same thing, it's a tie.
             if player.get_choice() == computer.get_choice():

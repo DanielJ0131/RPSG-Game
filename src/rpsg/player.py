@@ -30,26 +30,28 @@ class Player:
                 self.set_name(name)
                 break
 
+    def input_choice(self):
+        """Input the player's choice."""
+        choice = None
+        while choice is None:
+            print('\nChoose "Rock", "Paper", "Scissors" to play!')
+            choice = input("\nEnter your choice >>> ").lower()
+            self.set_choice(choice)
+
     def get_choice(self):
         """Get the player's choice."""
         return self.choice
 
-    def set_choice(self):
+    def set_choice(self, choice):
         """Set the player's choice."""
-        self.choice = None
-        while self.choice not in ["rock", "paper", "scissors", "gun"]:
-            print('\nChoose "Rock", "Paper", "Scissors" to play!')
-            self.choice = input("\nEnter your choice >>> ").lower()
-            match self.choice:
-                case "rock" | "r":
-                    self.choice = "rock"
-                case "paper" | "p":
-                    self.choice = "paper"
-                case "scissors" | "s":
-                    self.choice = "scissors"
-                case "gun" | "g":
-                    self.choice = "gun"
-                case _:
-                    self.choice = None
-                    print("Invalid choice, try again!")
-                    continue
+        match choice:
+            case "rock" | "r":
+                self.choice = "rock"
+            case "paper" | "p":
+                self.choice = "paper"
+            case "scissors" | "s":
+                self.choice = "scissors"
+            case "gun" | "g":
+                self.choice = "gun"
+            case _:
+                self.choice = None
