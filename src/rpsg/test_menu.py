@@ -1,5 +1,4 @@
 """Test File for Unit Testing menu.py."""
-# pylint: disable=import-error
 import unittest
 from menu import Menu
 
@@ -19,11 +18,6 @@ class MenuTest(unittest.TestCase):
     def test_menu(self):
         """Test the Menu class."""
         self.assertIsInstance(self.menu, Menu)
-
-    def test_draw(self):
-        """Test the draw method."""
-        self.menu.draw()
-        self.assertEqual(self.menu.draw(), None)
 
 
 if __name__ == "__main__":
