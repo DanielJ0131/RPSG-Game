@@ -7,9 +7,7 @@ Daniels Suggestions:
 
 1. Print Scoreboard after every Win / Tie / Loss.
 
-2. Unit testing!
-
-3. Sort the scoreboard names according to their win count.
+2. Unit testing left : GameStats, Scoreboard, Game, Main
 
 
 -------------------------------------------------------------------------------------------
