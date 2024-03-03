@@ -1,9 +1,8 @@
 """Test File for Unit Testing computer.py."""
-# pylint: disable=import-error
 from computer import Computer
 
 
-def test_set_up(self):
+def set_up(self):
     """Set the ComputerTest."""
     self.computer = Computer()
 
