@@ -29,8 +29,6 @@ class Player:
             if answer in ["yes", "y"]:
                 self.set_name(name)
                 break
-            else:
-                self.input_name()
 
     def input_choice(self):
         """Input the player's choice."""

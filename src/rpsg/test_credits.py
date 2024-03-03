@@ -19,15 +19,15 @@ def clear_screen():
         os.system('clear')  # for Linux and macOS
 
 
-class MenuTest(unittest.TestCase):
-    """Test the Menu class."""
+class CreditsTest(unittest.TestCase):
+    """Test the Credits class."""
 
     def setUp(self):
-        """Set the MenuTest."""
+        """Set the Credits class."""
         self.credits = Credits()
 
-    def test_menu(self):
-        """Test the Menu class."""
+    def test_credits(self):
+        """Test the Credits class."""
         self.assertIsInstance(self.credits, Credits)
 
     def test_draw(self):

@@ -16,18 +16,18 @@ def clear_screen():
     if sys.platform.startswith('win'):
         os.system('cls')  # for Windows
     else:
-        os.system('clear')  # for Linux and macOS
+        os.system('clear')  # Linux/MacOS
 
 
-class MenuTest(unittest.TestCase):
-    """Test the Menu class."""
+class InstructionsTest(unittest.TestCase):
+    """Test the Instructions class."""
 
     def setUp(self):
-        """Set the MenuTest."""
+        """Set the Instructions class."""
         self.instructions = Instructions()
 
-    def test_menu(self):
-        """Test the Menu class."""
+    def test_instructions(self):
+        """Test the Instructions class."""
         self.assertIsInstance(self.instructions, Instructions)
 
     def test_draw(self):
