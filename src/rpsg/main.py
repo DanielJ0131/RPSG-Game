@@ -2,9 +2,10 @@
 
 # pylint: disable=import-error
 # Import the other modules.
+import time
 from game import Game
 from menu import Menu
-from instructions import Instruction
+from instructions import Instructions
 from scoreboard import Scoreboard
 from credits import Credits
 from player import Player
@@ -24,9 +25,11 @@ def main():
                 continue
             case "2":
                 Scoreboard().draw()
+                time.sleep(5)
                 continue
             case "3":
-                Instruction().draw()
+                Instructions().draw()
+                time.sleep(5)
                 continue
             case "4":
                 Credits().draw()

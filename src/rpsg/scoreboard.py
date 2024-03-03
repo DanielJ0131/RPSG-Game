@@ -1,7 +1,6 @@
 """Scoreboard Module."""
 
 import pickle  # Import the pickle module to save the game stats.
-import time  # Import the time module to add a delay to the game.
 
 
 class Scoreboard:
@@ -28,7 +27,6 @@ class Scoreboard:
                 print(f"| {key:22} {value:<9} |")
         print("===================================")
         print("\n")
-        time.sleep(5)
 
     def save_score(self, player, score):
         """Save the scores in a binary file."""

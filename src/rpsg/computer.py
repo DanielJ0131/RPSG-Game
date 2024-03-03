@@ -44,4 +44,3 @@ class Computer:
                 self.mode = "hard"
             case _:
                 self.mode = None
-                print("Invalid mode, try again!")
