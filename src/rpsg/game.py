@@ -144,7 +144,7 @@ class Game:
             print("\nand it's the computer!")
 
         else:
-            print("\nand it's the user!")
+            print(f"\nand it's {player.get_name()}!")
 
         time.sleep(1)
         print("\nWanna play again?")
@@ -158,6 +158,7 @@ class Game:
                 print("\n(WARNING: You cheated in this game >:C)")
             else:
                 print("\nGood game :)")
+            time.sleep(2)
 
             # Game stats #
             if game.cheat is False:  # If the player didn't cheat.

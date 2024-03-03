@@ -13,16 +13,21 @@ class Player:
         """Get the player's name."""
         return self.name
 
-    def set_name(self):
+    def set_name(self, name):
         """Set the player's name."""
+        self.name = name
+
+    def input_name(self):
+        """Input the player's name."""
         while True:
-            self.name = input("Enter player name: ")
-            if len(self.name) >= 10:
-                print("(\nYour name is too long!)")
+            name = input("Enter player name: ")
+            if len(name) >= 10:
+                print("\n(Your name is too long!)")
                 continue
-            print(f"\nAre you happy with the name: {self.name}?")
+            print(f"\nAre you happy with the name: {name}?")
             answer = input("(yes/no) >>> ").lower()
             if answer in ["yes", "y"]:
+                self.set_name(name)
                 break
 
     def get_choice(self):

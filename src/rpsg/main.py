@@ -18,7 +18,7 @@ def main():
         choice = input("\nEnter your choice >>> ")
         match choice:
             case "1":
-                player.set_name()
+                player.input_name()
                 rounds = 9
                 Game().play(rounds, player)
                 continue
