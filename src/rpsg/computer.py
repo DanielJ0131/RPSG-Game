@@ -18,7 +18,7 @@ class Computer:
         """Set the computer's choice."""
         self.choice = random.choices(
             ["rock", "paper", "scissors", "gun"],
-            weights=[0.30, 0.30, 0.30, 0.10],
+            weights=[0.3, 0.3, 0.3, 0.1],
         )[0]
         return self.choice
 
@@ -31,11 +31,6 @@ class Computer:
         """Choose hard choice."""
         self.choice = random.choices(
             ["rock", "paper", "scissors", "win"],
-            weights=[
-                0.2,
-                0.2,
-                0.2,
-                0.4,
-            ],
+            weights=[0.15, 0.15, 0.15, 0.55],
         )[0]
         return self.choice
