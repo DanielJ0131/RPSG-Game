@@ -11,7 +11,7 @@ def main():
 class MenuTest(unittest.TestCase):
     """Test the Menu class."""
 
-    def test_set_up(self):
+    def setUp(self):
         """Set the MenuTest."""
         self.menu = Menu()
 
