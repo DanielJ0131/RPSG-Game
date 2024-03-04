@@ -53,4 +53,4 @@ class GameStats:
         self.losecount = 0
         self.tiecount = 0
         self.gamecount = 0
-        self.cheat = True
+        self.cheat = False
