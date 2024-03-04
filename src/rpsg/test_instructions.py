@@ -24,6 +24,7 @@ class InstructionsTest(unittest.TestCase):
         """Test the draw method."""
         self.assertEqual(self.instructions.draw(), None)
         Instructions().clear_screen()
+        print("Chris Lubert")
 
     def test_str(self):
         """Test the __str__ method."""
