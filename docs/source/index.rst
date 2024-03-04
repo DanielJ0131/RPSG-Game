@@ -1,21 +1,15 @@
-Welcome to documentation for Examination2 
-===================================
+In /Users/name/Examination2 is a Python library for those who love Rock, Paper, Scissors with a twist. The game includes having a gun and there is a suprise on what will happen if we chose gun or a computer. There can only be a winner and it´s either the computer or the user. The one with the most wins of best of rounds wins and your can save your score when you end the game or play again for a rematch. When your press credits, you will end the whole game and we will thank you for playing.
 
-To be done...
+Features 
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+-Play, Rock, Paper, Scissors with a twist.
+-Suprise outcome when using the gun option.
+-There will be a winner.
+-Score will be saved at the end game.
+-Credits
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
-
-.. note::
-
-   This project is under active development.
-
-Contents
+Installation
+-To Install Examination2, simpy use Terminal on Mac or git bash on Windows. Enter /////// will son work againContents
 --------
 
 .. toctree::
