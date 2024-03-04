@@ -6,8 +6,6 @@ import pickle  # Import the pickle module to save the game stats.
 class Scoreboard:
     """Scoreboard Class."""
 
-    score = 0
-
     def draw(self):
         """Draws the game scoreboard."""
         score_dict = self.get_score()
@@ -52,3 +50,7 @@ class Scoreboard:
         except (EOFError, FileNotFoundError):
             print("No scores found!")
             return None
+
+    def __str__(self):
+        """Return the string representation of the class."""
+        return "Scoreboard"
