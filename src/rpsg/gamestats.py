@@ -54,3 +54,7 @@ class GameStats:
         self.tiecount = 0
         self.gamecount = 0
         self.cheat = False
+
+    def __str__(self):
+        """Return the string representation of the class."""
+        return "GameStats"

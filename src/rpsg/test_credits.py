@@ -2,7 +2,7 @@
 # pylint: disable=import-error
 import unittest
 from credits import Credits
-from instructions import Instructions
+from test_instructions import clear_screen
 
 
 def main():
@@ -24,7 +24,7 @@ class CreditsTest(unittest.TestCase):
     def test_draw(self):
         """Test the draw method."""
         self.assertEqual(self.credits.draw(), None)
-        Instructions().clear_screen()
+        clear_screen()
 
     def test_str(self):
         """Test the __str__ method."""

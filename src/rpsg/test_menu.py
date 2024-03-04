@@ -1,22 +1,13 @@
 """Test File for Unit Testing menu.py."""
 # pylint: disable=import-error
-import os
-import sys
 import unittest
 from menu import Menu
+from test_instructions import clear_screen
 
 
 def main():
     """Run the test."""
     unittest.main()
-
-
-def clear_screen():
-    """Clear the screen based on the operating system."""
-    if sys.platform.startswith('win'):
-        os.system('cls')  # for Windows
-    else:
-        os.system('clear')  # for Linux and macOS
 
 
 class MenuTest(unittest.TestCase):
