@@ -1,4 +1,7 @@
 """Scoreboard Module."""
+import colorama
+from colorama import Fore, Style
+colorama.init(autoreset=True)
 
 import pickle  # Import the pickle module to save the game stats.
 
@@ -10,20 +13,20 @@ class Scoreboard:
         """Draws the game scoreboard."""
         score_dict = self.get_score()
 
-        print("===================================")
-        print("|           *Scoreboard*           |")
-        print("===================================")
-        print("| Player names           Win count |")
-        print("===================================")
+        print(Fore.LIGHTYELLOW_EX + "===================================")
+        print(Fore.LIGHTYELLOW_EX + "|           *" + Fore.MAGENTA+ "Scoreboard" + Fore.LIGHTYELLOW_EX + "*           |")
+        print(Fore.LIGHTYELLOW_EX + "===================================")
+        print(Fore.LIGHTYELLOW_EX + "| " + Fore.MAGENTA + "Player names" + Fore.MAGENTA + "           Win count" + Fore.LIGHTYELLOW_EX + " |")
+        print(Fore.LIGHTYELLOW_EX + "===================================")
         # Sort the stats by win count.
         if score_dict is None:
-            print("| -                      -         |")
+            print(Fore.LIGHTYELLOW_EX + "| -                      -         |")
         else:
             score_dict = sorted(score_dict.items(),
                                 key=lambda x: x[1], reverse=True)
             for key, value in score_dict:
-                print(f"| {key:22} {value:<9} |")
-        print("===================================")
+                print(Fore.LIGHTYELLOW_EX + f"| {key:22} {value:<9} |")
+        print(Fore.LIGHTYELLOW_EX + "===================================")
         print("\n")
 
     def save_score(self, player, score):

@@ -9,6 +9,9 @@ from instructions import Instructions
 from scoreboard import Scoreboard
 from credits import Credits
 from player import Player
+import colorama
+from colorama import Fore, Style
+colorama.init(autoreset=True)
 
 
 def main():
@@ -16,7 +19,7 @@ def main():
     player = Player()
     while True:
         Menu().draw()
-        choice = input("\nEnter your choice >>> ")
+        choice = input(Fore.LIGHTWHITE_EX + Style.BRIGHT + "\nEnter your choice >>> ")
         match choice:
             case "1":
                 player.input_name()
