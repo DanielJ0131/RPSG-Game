@@ -16,17 +16,18 @@ Starting the Game
 ----------------
 
 To star the Game,
-navigate to your script's directory ``python main.py`` function:
+Use the cd (Change directory) command to navigate to the directory whre your Python script is located.
+Like a folder called ``cd path/to/Examination2``:
 
 .. autofunction:: cd path/to/Examination2
 
-Then use python "main.py" to start the game.
+To Run the python script use "python main.py" to start the game.
 
-.. autoexception:: lumache.InvalidKindError
+.. autoexception:: python main.py
 
 For example:
 
->>> import Examination2
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+>>> pip install Examination2
+>>> cd path/to/Examination2
+>>> python main.py
 
