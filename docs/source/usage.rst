@@ -30,7 +30,7 @@ For example:
 >>> pip install Examination2
 >>> cd path/to/Examination2
 >>> python main.py 
->>>   ===================================
+>>>    ===================================
       |         Welcome to the           |
       |  * Rock, Paper, Scissors, Gun *  |
       |              Game!               |
