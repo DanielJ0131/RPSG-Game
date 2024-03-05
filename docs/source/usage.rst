@@ -10,7 +10,7 @@ To use Examination2, first install it using pip:
 
 .. code-block:: console
 
-   (.venv) $ pip install Examination2
+   (.venv) $ pip install <>Code
 
 Starting the Game
 ----------------
