@@ -1,8 +1,6 @@
 """Scoreboard Module."""
+
 import pickle  # Import the pickle module to save the game stats.
-import colorama
-from colorama import Fore
-colorama.init(autoreset=True)
 
 
 class Scoreboard:
@@ -12,23 +10,20 @@ class Scoreboard:
         """Draws the game scoreboard."""
         score_dict = self.get_score()
 
-        print(Fore.LIGHTYELLOW_EX + " ==================================")
-        print(Fore.LIGHTYELLOW_EX + "|           *" + Fore.MAGENTA +
-              "Scoreboard" + Fore.LIGHTYELLOW_EX + "*           |")
-        print(Fore.LIGHTYELLOW_EX + "|==================================|")
-        print(Fore.LIGHTYELLOW_EX + "| " + Fore.MAGENTA + "Player" +
-              Fore.MAGENTA + "                 Win count" + Fore.LIGHTYELLOW_EX
-              + " |")
-        print(Fore.LIGHTYELLOW_EX + "|==================================|")
+        print("===================================")
+        print("|           *Scoreboard*           |")
+        print("===================================")
+        print("| Player names           Win count |")
+        print("===================================")
         # Sort the stats by win count.
         if score_dict is None:
-            print(Fore.LIGHTYELLOW_EX + "| -                      -         |")
+            print("| -                      -         |")
         else:
             score_dict = sorted(score_dict.items(),
                                 key=lambda x: x[1], reverse=True)
             for key, value in score_dict:
-                print(Fore.LIGHTYELLOW_EX + f"| {key:22} {value:<9} |")
-        print(Fore.LIGHTYELLOW_EX + " ==================================")
+                print(f"| {key:22} {value:<9} |")
+        print("===================================")
         print("\n")
 
     def save_score(self, player, score):
@@ -40,16 +35,16 @@ class Scoreboard:
             old_score = self.get_score()
             if old_score is not None:
                 old_score.update(score_dict)
-                with open("src/rpsg/scoreboard.bin", "wb") as outfile:
+                with open("src/rpsg/scoreboard.dat", "wb") as outfile:
                     pickle.dump(old_score, outfile)
             else:
-                with open("src/rpsg/scoreboard.bin", "wb") as outfile:
+                with open("src/rpsg/scoreboard.dat", "wb") as outfile:
                     pickle.dump(score_dict, outfile)
 
     def get_score(self):
         """Get the scores from the binary file."""
         try:
-            with open("src/rpsg/scoreboard.bin", "rb") as infile:
+            with open("src/rpsg/scoreboard.dat", "rb") as infile:
                 score_dict = pickle.load(infile)
                 return score_dict
         except (EOFError, FileNotFoundError):
