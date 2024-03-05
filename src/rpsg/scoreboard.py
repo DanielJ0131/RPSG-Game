@@ -40,16 +40,16 @@ class Scoreboard:
             old_score = self.get_score()
             if old_score is not None:
                 old_score.update(score_dict)
-                with open("src/rpsg/scoreboard.dat", "wb") as outfile:
+                with open("src/rpsg/scoreboard.bin", "wb") as outfile:
                     pickle.dump(old_score, outfile)
             else:
-                with open("src/rpsg/scoreboard.dat", "wb") as outfile:
+                with open("src/rpsg/scoreboard.bin", "wb") as outfile:
                     pickle.dump(score_dict, outfile)
 
     def get_score(self):
         """Get the scores from the binary file."""
         try:
-            with open("src/rpsg/scoreboard.dat", "rb") as infile:
+            with open("src/rpsg/scoreboard.bin", "rb") as infile:
                 score_dict = pickle.load(infile)
                 return score_dict
         except (EOFError, FileNotFoundError):
