@@ -10,19 +10,17 @@ To use Examination2, first install it using pip:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   (.venv) $ pip install Examination2
 
 Starting the Game
 ----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+To star the Game,
+navigate to your script's directory ``cd path/to/Examination2`` function:
 
-.. autofunction:: lumache.get_random_ingredients
+.. autofunction:: cd path/to/Examination2
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+Then use python "main.py" to start the game.
 
 .. autoexception:: lumache.InvalidKindError
 
