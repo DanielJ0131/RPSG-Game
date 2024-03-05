@@ -12,7 +12,7 @@ To use Examination2, first install it using pip:
 
    (.venv) $ pip install lumache
 
-Creating recipes
+Starting the Game
 ----------------
 
 To retrieve a list of random ingredients,
