@@ -16,7 +16,7 @@ Starting the Game
 ----------------
 
 To star the Game,
-navigate to your script's directory ``cd path/to/Examination2`` function:
+navigate to your script's directory ``python main.py`` function:
 
 .. autofunction:: cd path/to/Examination2
 
