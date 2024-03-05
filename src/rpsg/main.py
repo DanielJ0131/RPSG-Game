@@ -19,7 +19,8 @@ def main():
     player = Player()
     while True:
         Menu().draw()
-        choice = input(Fore.LIGHTWHITE_EX + Style.BRIGHT + "\nEnter your choice >>> ")
+        choice = input(Fore.LIGHTWHITE_EX + Style.BRIGHT +
+                       "\nEnter your choice >>> ")
         match choice:
             case "1":
                 player.input_name()
