@@ -12,10 +12,6 @@ Features
 
 -Credits
 
-Installation
--To Install Examination2, simpy use Terminal on Mac or git bash on Windows. 
-Enter /////// will son work againContents
---------
 
 .. toctree::
 
