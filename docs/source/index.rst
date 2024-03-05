@@ -2,11 +2,11 @@ In /Users/name/Examination2 is a Python library for those who love Rock, Paper, 
 
 Features 
 
--/nPlay, Rock, Paper, Scissors with a twist 
--/nSuprise outcome when using the gun option. 
--/nThere will be a winner. 
--/nScore will be saved at the end game.
--/nCredits
+-Play, Rock, Paper, Scissors with a twist 
+-Suprise outcome when using the gun option. 
+-There will be a winner. 
+-Score will be saved at the end game.
+-Credits
 
 Installation
 -To Install Examination2, simpy use Terminal on Mac or git bash on Windows. Enter /////// will son work againContents
