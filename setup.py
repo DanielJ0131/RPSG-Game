@@ -1,9 +1,5 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
-setup(
-    name='Examination2',
-    version='1.0.0',
-    url='https://github.com/Examination2.git',
-    description='Description of my package',
-    packages=find_packages(),    
+if __name__ == "__main__":
+    setup(
 )
