@@ -30,15 +30,15 @@ For example:
 >>> pip install Examination2
 >>> cd path/to/Examination2
 >>> python main.py 
->>>    ===================================
-      |         Welcome to the           |
-      |  * Rock, Paper, Scissors, Gun *  |
-      |              Game!               |
-      |==================================|
-      | 1. Start Game                    |
-      | 2. Scoreboard                    |
-      | 3. Instructions                  |
-      | 4. Credits                       |
-      |==================================|
+>>> ===================================
+   |         Welcome to the           |
+   |  * Rock, Paper, Scissors, Gun *  |
+   |              Game!               |
+   |==================================|
+   | 1. Start Game                    |
+   | 2. Scoreboard                    |
+   | 3. Instructions                  |
+   | 4. Credits                       |
+   |==================================|
 
 
