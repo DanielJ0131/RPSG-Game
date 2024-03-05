@@ -1,7 +1,5 @@
 """Player Class."""
-import colorama
-from colorama import Fore, Style
-colorama.init(autoreset=True)
+
 
 class Player:
     """Player Class."""
@@ -22,12 +20,12 @@ class Player:
     def input_name(self):
         """Input the player's name."""
         while True:
-            name = input(Fore.LIGHTWHITE_EX + Style.BRIGHT + "Enter player name: ")
+            name = input("Enter player name: ")
             if len(name) >= 10:
                 print("\n(Your name is too long!)")
                 continue
             print(f"\nAre you happy with the name: {name}?")
-            answer = input(Fore.LIGHTWHITE_EX + Style.BRIGHT + "(yes/no) >>> ").lower()
+            answer = input("(yes/no) >>> ").lower()
             if answer in ["yes", "y"]:
                 self.set_name(name)
                 break
