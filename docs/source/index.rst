@@ -3,9 +3,13 @@ In /Users/name/Examination2 is a Python library for those who love Rock, Paper, 
 Features 
 
 -Play, Rock, Paper, Scissors with a twist 
+
 -Suprise outcome when using the gun option. 
+
 -There will be a winner. 
+
 -Score will be saved at the end game.
+
 -Credits
 
 Installation
