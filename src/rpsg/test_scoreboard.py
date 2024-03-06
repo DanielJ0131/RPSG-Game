@@ -30,6 +30,11 @@ class ScoreboardTest(unittest.TestCase):
         """Test the save_score method."""
         self.assertEqual(self.scoreboard.save_score("Player", 1), None)
 
+    def test_get_score(self):
+        """Test the get_score method."""
+        self.assertEqual(self.scoreboard.get_score(), {"Player": 1})
+        self.assertIsInstance(self.scoreboard.get_score(), dict)
+
     def test_str(self):
         """Test the __str__ method."""
         self.assertEqual(str(self.scoreboard), "Scoreboard")
