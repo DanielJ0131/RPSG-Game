@@ -7,7 +7,7 @@ Daniels Suggestions:
 
 1. Print Scoreboard after every Win / Tie / Loss.
 
-2. Unit testing left : GameStats, Scoreboard, Game, Main
+2. Unit testing left : Scoreboard, Gamestats, Game
 
 
 -------------------------------------------------------------------------------------------
