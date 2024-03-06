@@ -12,16 +12,22 @@ class Instructions:
         print(
             """
               How to Play the game step by step:
-              1. Game is simple and it's about Rock, Paper, Scissors and Gun.
-              2. If you have played this game before, skip this tutorial.
-              3. To Start, select 1 on the main menu and press enter.
-              4. The player will go up against a computer bot.
-              5. The player then has the options Rock, Paper, Scissors or Gun.
-              6. The computer has a 10% chance of choosing Gun.
-              7. Whoever takes the winning choice, wins the round.
-              8. This continues until we anyone wins more than 3 rounds.
-              9. The score will show you the results at the end of the rounds.
-              10. You can either beat the computer, lose or play again.
+              * Game is simple and similar to Rock, Paper, Scissors.
+              * If you have played this game before, skip these instructions.
+              * To Start, select 1 on the main menu and press enter.
+              * The player will go up against a computer bot.
+              * The player can choose difficulty level. (Easy, Medium, Hard)
+              * The player then has the options Rock, Paper, Scissors or Gun.
+              * You can also type (r, p, s, g) to choose your option.
+              * Gun for player is a cheat code to automatically win.
+              * The computer has a 10% chance of choosing Gun.
+              * If the computer chooses Gun, the player rolls a dice to win.
+              * Whoever takes the winning choice, wins the round.
+              * This continues until anyone wins more than 5 rounds.
+              * The score will show you the results at the end of the rounds.
+              * You can either beat the computer, lose or play again.
+              * Good luck and have fun!
+
               """
         )
 
