@@ -9,6 +9,8 @@ Installation
 To use Examination2, first install it using pip:
 
 .. code-block:: console
+   
+.. autofunction::
    pip install virtualenv
    virtualenv venv
    source venv/bin/activate
@@ -31,7 +33,6 @@ For example:
 >>> pip install virtualenv
 >>> virtualenv venv
 >>> source venv/bin/activate
-
 
 >>> pip install Examination2
 >>> cd path/to/Examination2
