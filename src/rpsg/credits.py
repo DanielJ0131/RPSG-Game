@@ -12,16 +12,16 @@ class Credits:
         author1 = "Ngoc Hong (Mi)"
         author2 = "Chris Lubert"
         author3 = "Daniel Jönsson"
-        print("===================================")
+        print(" =================================")
         print("|           *Credits*             |")
-        print("===================================")
+        print(" =================================")
         print("|© HKR 2024 - All rights reserved.|")
-        print("===================================")
+        print(" =================================")
         print("|          Created by:            |")
         print(f"|-{author1}                  |")
         print(f"|-{author2}                    |")
         print(f"|-{author3}                  |")
-        print("===================================")
+        print(" =================================")
         print("Thank you for playing!")
 
     def __str__(self):

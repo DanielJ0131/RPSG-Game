@@ -15,11 +15,11 @@ class Scoreboard:
         score_dict = self.get_score()
         self.score_dict = score_dict
 
-        print("===================================")
+        print(" ==================================")
         print("|           *Scoreboard*           |")
-        print("===================================")
-        print("| Player names           Win count |")
-        print("===================================")
+        print(" ==================================")
+        print("| Player                 Win count |")
+        print(" ==================================")
         if score_dict is None:
             print("| -                      -         |")
         else:
@@ -28,7 +28,7 @@ class Scoreboard:
                                 key=lambda x: x[1], reverse=True)
             for key, value in score_dict:
                 print(f"| {key:22} {value:<9} |")
-        print("===================================")
+        print(" ==================================")
         print("\n")
         self.score_dict = score_dict
 
