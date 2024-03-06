@@ -6,6 +6,10 @@ import pickle  # Import the pickle module to save the game stats.
 class Scoreboard:
     """Scoreboard Class."""
 
+    def __init__(self):
+        """Initialize the class."""
+        self.score_dict = None
+
     def draw(self):
         """Draws the game scoreboard."""
         score_dict = self.get_score()
@@ -25,6 +29,7 @@ class Scoreboard:
                 print(f"| {key:22} {value:<9} |")
         print("===================================")
         print("\n")
+        self.score_dict = score_dict
 
     def save_score(self, player, score):
         """Save the scores in a binary file."""
@@ -40,9 +45,11 @@ class Scoreboard:
             else:
                 with open("scoreboard.bin", "wb") as outfile:
                     pickle.dump(score_dict, outfile)
+        self.score_dict = score_dict
 
     def get_score(self):
         """Get the scores from the binary file."""
+        score_dict = self.score_dict
         try:
             with open("scoreboard.bin", "rb") as infile:
                 score_dict = pickle.load(infile)

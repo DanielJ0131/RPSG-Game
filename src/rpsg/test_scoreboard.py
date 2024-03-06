@@ -1,5 +1,6 @@
 """Test File for Unit Testing scoreboard.py."""
 # pylint: disable=import-error
+import os  # Import the os module to remove the scoreboard.bin file.
 import unittest
 from scoreboard import Scoreboard
 from test_instructions import clear_screen
@@ -32,8 +33,16 @@ class ScoreboardTest(unittest.TestCase):
 
     def test_get_score(self):
         """Test the get_score method."""
-        self.assertEqual(self.scoreboard.get_score(), {"Player": 1})
+        if os.path.exists("scoreboard.bin"):
+            os.remove("scoreboard.bin")
+        self.scoreboard.score_dict = None
+        self.assertEqual(self.scoreboard.get_score(), None)
+        self.assertEqual(self.scoreboard.score_dict, None)
+        self.test_save_score()
         self.assertIsInstance(self.scoreboard.get_score(), dict)
+        self.assertEqual(self.scoreboard.get_score(), {"Player": 1})
+        self.assertEqual(self.scoreboard.score_dict, {"Player": 1})
+        clear_screen()
 
     def test_str(self):
         """Test the __str__ method."""
