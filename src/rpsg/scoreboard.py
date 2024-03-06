@@ -15,10 +15,10 @@ class Scoreboard:
         print("===================================")
         print("| Player names           Win count |")
         print("===================================")
-        # Sort the stats by win count.
         if score_dict is None:
             print("| -                      -         |")
         else:
+            # Sort the stats by win count.
             score_dict = sorted(score_dict.items(),
                                 key=lambda x: x[1], reverse=True)
             for key, value in score_dict:
