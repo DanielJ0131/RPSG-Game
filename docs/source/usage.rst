@@ -9,7 +9,7 @@ Installation
 To use Examination2, first install it using pip:
 
 .. code-block:: console
-   
+
 .. autofunction::
    pip install virtualenv
    virtualenv venv
@@ -21,11 +21,11 @@ Starting the Game
 
 To star the Game,
 Use the cd (Change directory) command to navigate to the directory whre your Python script is located.
-Like a folder called ``cd path/to/Examination2``:
+Like a folder called ``cd path/to/Examination2``: 
 
 .. autofunction:: cd path/to/Examination2
 
-To Run the python script use "python main.py" to start the game.
+To Run the python script use "python main.py" to start the game. 
 
 .. autoexception:: python main.py
 
