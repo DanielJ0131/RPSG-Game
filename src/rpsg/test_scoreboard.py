@@ -29,7 +29,11 @@ class ScoreboardTest(unittest.TestCase):
 
     def test_save_score(self):
         """Test the save_score method."""
+        self.assertEqual(self.scoreboard.save_score(None, 1), None)
+        if os.path.exists("scoreboard.bin"):
+            os.remove("scoreboard.bin")
         self.assertEqual(self.scoreboard.save_score("Player", 1), None)
+        clear_screen()
 
     def test_get_score(self):
         """Test the get_score method."""

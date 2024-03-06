@@ -13,6 +13,7 @@ class Scoreboard:
     def draw(self):
         """Draws the game scoreboard."""
         score_dict = self.get_score()
+        self.score_dict = score_dict
 
         print("===================================")
         print("|           *Scoreboard*           |")
