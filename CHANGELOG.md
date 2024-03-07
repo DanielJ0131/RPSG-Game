@@ -1,6 +1,12 @@
 Changelog and revision history
 ========================
 
+v.1.7.0 (2024-03-07)
+------------------------
+
+* Adds complete documentation and install guide!
+
+
 
 
 v.1.6.0 (2024-03-03)
