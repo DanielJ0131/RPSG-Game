@@ -2,10 +2,10 @@
 # Ngoc Hong (Mi), Chris Lubert, Daniel Jönsson
 
 ### Download Class & Package UML Diagram in terminal for Windows & Mac OS/ Linux
-### Do everything in virtual enviroment by installing venv!
-### Follow these steps below!
+**Do everything in virtual enviroment by installing venv!**
+**Follow these steps below!**
 
-**Step: 1 (Installing venv)**
+**Step: 1** Installing venv
 1. Open Directory in Terminal, write (cd Examination2)
 2. Create the virtual environment with help of our given
 3. Makefile. In the Terminal, write (python3 -m venv .venv) and (make venv)
