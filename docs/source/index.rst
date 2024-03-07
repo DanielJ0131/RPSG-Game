@@ -24,7 +24,7 @@ Features
 Usage: This sectio provides a comprehensive guide on how to utilize the Python Library "Examination2" for playing the game of Rock, Paper, Scissors with a twist.
 
 
-Api: This section outlines the Application Programming Interface "API" of Examination2, detailing the various functions, classes and methods available for developers.
+API: This section outlines the Application Programming Interface "API" of Examination2, detailing the various functions, classes and methods available for developers.
 
 
 
