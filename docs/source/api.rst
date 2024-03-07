@@ -12,7 +12,5 @@ API
    method, which is used to ensure user input is case-insensitive, to prevent errors.
 
    In summary, our programs's architecture is modular, with each class representing a specific aspect of the program's functionalitiy. This structure not only simplifies code management
-   and maintenance, but also facillitates the addtion of new features or modifications to existing ones.
-
-   Examination2
-   Provides a clearer and most structured explanation of the program's design and functionalitiy.
+   and maintenance, but also facillitates the addtion of new features or modifications to existing ones. So Examination2
+   provides a clearer and most structured explanation of the program's design and functionalitiy.
