@@ -85,8 +85,23 @@ class Game:
                     "\nThe computer chose Gun! "
                     + "Roll the dice to see if you survive! "
                 )
-                self.roll_dice(game, player)
-                time.sleep(1)
+
+                if self.roll_dice() >= 4:
+                    game.win()
+                    match player.get_choice():
+                        case "scissors":
+                            print("You cut the Gun in half and won!")
+
+                        case "rock":
+                            print("You smashed the Gun and won!")
+
+                        case "paper":
+                            print("You pushed the Paper into the Gun and won!")
+
+                else:
+                    print("You lost! Better luck next time.")
+                    game.lose()
+                    time.sleep(1)
 
             # If the player chose the losing choice, they lose.
             elif player.get_choice() == self.switch[computer.get_choice()]:
@@ -107,7 +122,7 @@ class Game:
                 time.sleep(1)
                 break
 
-    def roll_dice(self, game, player):
+    def roll_dice(self):
         """Roll the dice to see if the player survives the Gun."""
         input("Press enter to roll the dice! >>> ")
         time.sleep(1)
@@ -123,22 +138,7 @@ class Game:
         dice = random.randint(1, 6)
         print(f"You rolled a {dice}!!!")
         time.sleep(1)
-
-        if dice >= 4:
-            game.win()
-            match player.get_choice():
-                case "scissors":
-                    print("You cut the Gun in half and won!")
-
-                case "rock":
-                    print("You smashed the Gun and won!")
-
-                case "paper":
-                    print("You pushed the Paper into the Gun and won!")
-
-        else:
-            print("You lost! Better luck next time.")
-            game.lose()
+        return dice
 
     def announce_winner(self, game, best_of_rounds, player):
         """Check who is the winner."""
