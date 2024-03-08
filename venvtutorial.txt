@@ -1,13 +1,13 @@
 """This is a tutorial on how to use .venv for LINTING, CODESTYLE, COVERAGE and UNITTEST"""
 
-PREREQUISITES - (Don't do these parts Chris, we have done it already! I can see that ;)/Chris)
+PREREQUISITES
 *Get the Makefile from Mikaels repository "oopython"
 *Get the requirements.txt from Mikaels repository
 
 1. Open Directory in Terminal, write (cd Examination2)
 
 2. Create the virtual environment with help of our given Makefile. In the Terminal, write
-(python3 -m venv .venv) and (make venv)
+(python -m venv .venv) or (python3 -m venv .venv) and (make venv)
 
 3. Activate the venv, write for Windows (. .venv/Scripts/activate) and for Mac/Linux (. .venv/bin/activate)
 
