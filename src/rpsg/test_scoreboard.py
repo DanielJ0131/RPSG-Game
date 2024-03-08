@@ -33,7 +33,7 @@ class ScoreboardTest(unittest.TestCase):
         self.assertEqual(self.scoreboard.save_score(None, 1), None)
         if os.path.exists("scoreboard.bin"):
             os.remove("scoreboard.bin")
-        self.assertEqual(self.scoreboard.save_score("Player", 1), None)
+        self.assertEqual(self.scoreboard.save_score("Daniel", 3), None)
         clear_screen()
 
     def test_get_score(self):
@@ -45,8 +45,8 @@ class ScoreboardTest(unittest.TestCase):
         self.assertEqual(self.scoreboard.score_dict, None)
         self.test_save_score()
         self.assertIsInstance(self.scoreboard.get_score(), dict)
-        self.assertEqual(self.scoreboard.get_score(), {"Player": 1})
-        self.assertEqual(self.scoreboard.score_dict, {"Player": 1})
+        self.assertEqual(self.scoreboard.get_score(), {"Daniel": 3})
+        self.assertEqual(self.scoreboard.score_dict, {"Daniel": 3})
         clear_screen()
 
     def test_str(self):

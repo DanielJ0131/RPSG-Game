@@ -3,6 +3,7 @@
 # pylint: disable=import-error
 import unittest
 from gamestats import GameStats
+from test_instructions import clear_screen
 
 
 def main():
@@ -48,7 +49,8 @@ class GameStatsTest(unittest.TestCase):
 
     def test_print_stats(self):
         """Test the print_stats method."""
-        # This method has a time.sleep() function and is not testable.
+        self.assertEqual(self.game_stats.print_stats(), None)
+        clear_screen()
 
     def test_reset_stats(self):
         """Test the reset_stats method."""
