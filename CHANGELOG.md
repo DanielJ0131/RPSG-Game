@@ -1,6 +1,13 @@
 Changelog and revision history
 ========================
 
+v.1.8.0 (2024-03-08)
+------------------------
+
+* Fixes the last requirements and bugs for hand-in to Mikael's assignment!
+
+
+
 v.1.7.0 (2024-03-07)
 ------------------------
 
