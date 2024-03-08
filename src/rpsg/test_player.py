@@ -1,4 +1,5 @@
 """Test File for Unit Testing player.py."""
+
 # pylint: disable=import-error
 import unittest
 from player import Player

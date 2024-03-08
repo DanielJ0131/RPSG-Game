@@ -1,4 +1,5 @@
 """Test File for Unit Testing scoreboard.py."""
+
 # pylint: disable=import-error
 import os  # Import the os module to remove the scoreboard.bin file.
 import unittest

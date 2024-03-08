@@ -1,4 +1,5 @@
 """Test File for Unit Testing instructions.py."""
+
 # pylint: disable=import-error
 import unittest
 import sys
@@ -13,10 +14,10 @@ def main():
 
 def clear_screen():
     """Clear the screen based on the operating system."""
-    if sys.platform.startswith('win'):
-        os.system('cls')  # for Windows
+    if sys.platform.startswith("win"):
+        os.system("cls")  # for Windows
     else:
-        os.system('clear')  # for Linux and macOS
+        os.system("clear")  # for Linux and macOS
 
 
 class InstructionsTest(unittest.TestCase):
@@ -34,7 +35,6 @@ class InstructionsTest(unittest.TestCase):
         """Test the draw method."""
         self.assertEqual(self.instructions.draw(), None)
         clear_screen()
-        print("Chris Lubert")
 
     def test_str(self):
         """Test the __str__ method."""

@@ -1,4 +1,5 @@
 """Test File for Unit Testing menu.py."""
+
 # pylint: disable=import-error
 import unittest
 from menu import Menu
