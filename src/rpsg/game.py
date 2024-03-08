@@ -67,7 +67,8 @@ class Game:
                 game.cheater()
                 game.win()
                 self.announce_winner(game, best_of_rounds, player)
-                print("(You have been banished " + "from this game and have to reset)")
+                print("(You have been banished " +
+                      "from this game and have to reset)")
                 time.sleep(5)
                 break
 
@@ -114,7 +115,8 @@ class Game:
                 time.sleep(1)
 
             # Check if the game is over.
-            if game.wincount >= best_of_rounds or game.losecount >= best_of_rounds:
+            if game.wincount >= best_of_rounds or \
+               game.losecount >= best_of_rounds:
                 self.announce_winner(game, best_of_rounds, player)
                 time.sleep(1)
                 break
