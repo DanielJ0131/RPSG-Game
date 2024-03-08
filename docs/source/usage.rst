@@ -19,8 +19,8 @@ To use Examination2, first install it using pip:
 Starting the Game
 ----------------
 
-To star the Game,
-Use the cd (Change directory) command to navigate to the directory whre your Python script is located.
+To start the Game,
+Use the cd (Change directory) command to navigate to the directory where your Python script is located.
 Like a folder called ``cd path/to/Examination2``: 
 
 .. autofunction:: cd path/to/Examination2
