@@ -6,7 +6,8 @@ Usage
 Installation
 ------------
 
-To use Examination2, first install it using pip:
+To use Examination2, first install it using pip.
+We also have an alternative, git clone:
 
 .. code-block:: console
 
@@ -15,6 +16,8 @@ To use Examination2, first install it using pip:
    virtualenv venv
    source venv/bin/activate
    (.venv) $ pip install git@github.com:DanielJ0131/Examination2.git
+   (.venv) $ git clone git@github.com:DanielJ0131/Examination2.git
+
 
 Starting the Game
 ----------------
@@ -23,7 +26,7 @@ To start the Game,
 Use the cd (Change directory) command to navigate to the directory where your Python script is located.
 Like a folder called ``cd path/to/Examination2``: 
 
-.. autofunction:: cd path/to/Examination2
+.. autofunction:: cd Examination2
 
 To Run the python script use "python main.py" to start the game. 
 
