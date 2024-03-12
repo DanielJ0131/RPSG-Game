@@ -19,7 +19,7 @@ Install the dot command to help generating the UML pictures from source code str
 2. dot -V (to check what version, optional!)
 
 **Step: 3**
-After virtuel enviroment is opened and graphviz is installed open up rpsg map is necessary in Examination2.
+After the virtual environment is opened and graphviz is installed open up rpsg map is necessary in Examination2.
 1. cd Examination2 (if not already opened)
 2. cd src
 3. cd rpsg
