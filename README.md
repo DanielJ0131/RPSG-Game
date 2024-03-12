@@ -7,8 +7,8 @@
 
 **Step: 1** Installing venv
 1. Open Directory in Terminal, write (cd Examination2)
-2. Create the virtual environment with help of our given
-3. Makefile. In the Terminal, write (python3 -m venv .venv) and (make venv)
+2. Create the virtual environment with help of our given Makefile. 
+3. In the Terminal, write (python3 -m venv .venv) and (make venv)
 4. Activate the venv, write for Windows (. .venv/Scripts/activate) and for Mac/Linux (. .venv/bin/activate)
 4. Install the virtual packages in venv. write (make install)
 5. Check the installed virtual packages (make installed)
