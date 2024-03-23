@@ -28,7 +28,7 @@ class Game:
         print("\nWelcome to Rock, Paper, Scissors, Gun!")
         print(f"\nThe game has chosen best of {best_of_rounds} rounds!")
 
-        # Choosee Mode #
+        # Choose Mode #
         mode = None
         while mode not in ["easy", "medium", "hard", "e", "m", "h"]:
             mode = input("Enter mode: Easy, Medium, Hard >>> ").lower()
@@ -42,6 +42,13 @@ class Game:
 
             # Player and Computer choices #
             player.input_choice()
+
+            # If the player choose to quit, exit the game.
+            if player.get_choice() == "q":
+                print("Quitting the game...")
+                time.sleep(1)
+                break
+
             match computer.mode:
                 case "easy":
                     computer.easy_choice()

@@ -23,7 +23,7 @@ class Instructions:
               * The computer has a 10% chance of choosing Gun.
               * If the computer chooses Gun, the player rolls a dice to win.
               * Whoever takes the winning choice, wins the round.
-              * This continues until anyone wins more than 5 rounds.
+              * This continues until anyone wins more than 4 rounds.
               * The score will show you the results at the end of the rounds.
               * You can either beat the computer, lose or play again.
               * Good luck and have fun!
