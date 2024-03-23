@@ -1,6 +1,14 @@
 Changelog and revision history
 ========================
 
+
+v.1.9.0 (2024-03-23)
+------------------------
+
+* Adds final project with doc folder and way to exit while playing.
+
+
+
 v.1.8.0 (2024-03-08)
 ------------------------
 
