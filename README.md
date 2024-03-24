@@ -5,12 +5,12 @@ By Ngoc Hong (Mi), Chris Lubert and Daniel Jönsson
 This is a Python implementation of the game Rock, Paper or Scissors. This game is designed to play in the terminal. It's fun and entertaining.
 
 ## Contents
--[Introduction](#introduction)
--[Requirements](#requirements)
--[Installation](#Installation)
--[Usage](#usage)
--[Rules for the game](#rules-for-the-game)
--[How to generate Documentation and UML diagrams](#documentation)
+- [Introduction](#introduction)
+- [Requirements](#requirements)
+- [Installation](#Installation)
+- [Usage](#usage)
+- [Rules for the game](#rules-for-the-game)
+- [How to generate Documentation and UML diagrams](#documentation)
 
 
 ## Introduction
