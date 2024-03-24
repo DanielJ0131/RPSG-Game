@@ -21,6 +21,11 @@ Testing
 ## Requirements
 testing
 
+## Rules for the game
+testing
+
+## How to generate Documentation and UML diagrams
+
 
 ### Download Class & Package UML Diagram in terminal for Windows & Mac OS/ Linux
 **Do everything in virtual enviroment by installing venv!**
