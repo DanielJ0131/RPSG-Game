@@ -10,7 +10,9 @@ This is a Python implementation of the game Rock, Paper or Scissors. This game i
 - [Installation](#Installation)
 - [Usage](#usage)
 - [Rules for the game](#rules-for-the-game)
+- [How to contribute to the project](#How-to-contribute-to-the-project) 
 - [How to generate Documentation and UML diagrams](#documentation)
+
 
 
 ## Introduction
