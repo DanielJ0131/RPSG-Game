@@ -11,15 +11,29 @@ This is a Python implementation of the game Rock, Paper or Scissors. This game i
 - [Usage](#usage)
 - [Rules for the game](#rules-for-the-game)
 - [How to contribute to the project](#How-to-contribute-to-the-project) 
-- [How to generate Documentation and UML diagrams](#documentation)
+- [How to generate Documentation and UML diagrams](#How-to-generate-documentation-and-UML-diagrams)
 
 
 
 ## Introduction
-Testing
+For those who love Rock, Paper, Scissors with a twist. The game includes having a gun and there is a surprise on what will happen if we chose gun or if the computer chose gun. There can only be a winner, it's either the computer, the user or one of the users when playing 2v2. The object is to win best of 5 rounds. The first one who gets to 5 wins first is the winner. Your score is saved and you can either play again or quit the game.
+
+There are instruction in the game on how to play and this guide is to help with the setup procces for being able to run the game. Also some guidance about other funcionalities.
 
 ## Requirements
-testing
+- A package manager (brew for MacOS and Chocolatey for Windows):
+    - How to install brew for MacOS is in this source https://brew.sh/
+    - How to install Chocolatey for Windows is in this source https://docs.chocolatey.org/en-us/choco/setup
+- A Python interpreter with at least version 3.3.
+    - Open the terminal to check if you have installed python and the right version.
+```bash
+python --version 
+python3 --version
+```
+
+
+
+
 
 ## Rules for the game
 testing
