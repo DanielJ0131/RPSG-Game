@@ -20,6 +20,11 @@ For those who love Rock, Paper, Scissors with a twist. The game includes having 
 
 There are instruction in the game on how to play and this guide is to help with the setup procces for being able to run the game. Also some guidance about other funcionalities.
 
+
+## Rules for the game
+The game implemented is called Rock, paper and Scissors. It's a decision and a dice game that is simple to play, but we added a twist to the game. You can read more about how the basic Rock, paper and Scissors game works on https://en.wikipedia.org/wiki/Rock_paper_scissors
+
+
 ## Requirements
 - A package manager (brew for MacOS and Chocolatey for Windows):
     - How to install brew for MacOS is in this source https://brew.sh/
@@ -30,13 +35,62 @@ There are instruction in the game on how to play and this guide is to help with 
 python --version 
 python3 --version
 ```
+    -To install the latest pytho using package manager (Brew or Chocolatey) in the terminal.
+```bash
+brew install python #for Mac
+choco install python #for Windows
+```
+-You have to conect to the Wifi for downloading this source code.
+-More about Git Bash is found in https://git-scm.com/downloads.
+-If you you do not have make tools, which is used to compile the source code of the program and it installs it on the system.
+To install it:
+```bash
+brew install python #for Mac
+choco install make  #for Windows
+```
 
+-To use our UML diagrams from our code. You need to install Graphviz package:
+```bash
+brew install graphviz #for Mac
+choco install graphviz #for Windows
+```
 
+## Installation
+To run the Rock,Paper and Scissors game, you need to follow these steps bellow:
 
+### First step:
+Clone the git repository to your local machine using the terminal provided by git Bash:
+```bash
+git clone git@github.com:DanielJ0131/Examination2.git
+```
+The repository and the source code contains all the Python files for executing the game. There are also other files for testing and different functionalities.
 
+### Second step:
+Navigate to the project directory usually found in the home folder. Open a new terminal at the root folder `Examination2`.
 
-## Rules for the game
-testing
+### Third step:
+Vitual enviroment needs to be created nad activated by running these commands:
+```bash
+make venv
+. .venv/bin/activate #for Mac
+. .venv/Scripts/activate #for Windows
+```
+### Fourth step:
+Install dependencies specified in the requirement.txt file with the command:
+```bash 
+make install
+```
+
+To see if it is installed, type in command:
+```bash
+make installed
+``` 
+
+To exit the virtual enviroment, type in command:
+```bash
+deactivate
+```
+
 
 ## How to generate Documentation and UML diagrams
 
