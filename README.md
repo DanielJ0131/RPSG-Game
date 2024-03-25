@@ -35,21 +35,21 @@ The game implemented is called Rock, paper and Scissors. It's a decision and a d
 python --version 
 python3 --version
 ```
-    -To install the latest pytho using package manager (Brew or Chocolatey) in the terminal.
+- To install the latest pytho using package manager (Brew or Chocolatey) in the terminal.
 ```bash
 brew install python #for Mac
 choco install python #for Windows
 ```
--You have to conect to the Wifi for downloading this source code.
--More about Git Bash is found in https://git-scm.com/downloads.
--If you you do not have make tools, which is used to compile the source code of the program and it installs it on the system.
+- You have to conect to the Wifi for downloading this source code.
+- More about Git Bash is found in https://git-scm.com/downloads.
+- If you you do not have make tools, which is used to compile the source code of the program and it installs it on the system.
 To install it:
 ```bash
 brew install python #for Mac
 choco install make  #for Windows
 ```
 
--To use our UML diagrams from our code. You need to install Graphviz package:
+- To use our UML diagrams from our code. You need to install Graphviz package:
 ```bash
 brew install graphviz #for Mac
 choco install graphviz #for Windows
