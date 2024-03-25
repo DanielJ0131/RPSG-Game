@@ -20,12 +20,14 @@ def main():
         choice = input("\nEnter your choice >>> ")
         match choice:
             case "1":
-                game_mode = input("Enter mode: ")
+                game_mode = input('Enter mode "player" or "computer": ').lower()
                 rounds = 9
                 if game_mode == "player":
                     player1 = Player()
                     player2 = Player()
+                    print("(Player one)")
                     player1.input_name()
+                    print("(Player two)")
                     player2.input_name()
                     game.play_pvp(rounds, player1, player2)
                     continue

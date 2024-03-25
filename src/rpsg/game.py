@@ -90,7 +90,8 @@ class Game:
             winner_name = "No one, it's a tie"
         
         print(f"The winner is {winner_name}!")
-        print(f"\nFinal scores: {player1.get_name()}, win {game_stats.wincount}, {player2.get_name()}, lose {game_stats.losecount}, Ties: {game_stats.tiecount}")
+        print(f"\nFinal scores for both {player1.get_name()} and {player2.get_name()}")
+        print(f"Wins: {game_stats.wincount} loses: {game_stats.losecount} Ties: {game_stats.tiecount}")
 
     def play(self, rounds, player):
         """Play the game."""
