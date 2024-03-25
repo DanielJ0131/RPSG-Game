@@ -8,10 +8,11 @@ This is a Python implementation of the game Rock, Paper or Scissors. This game i
 - [Introduction](#introduction)
 - [Requirements](#requirements)
 - [Installation](#Installation)
-- [Usage](#usage)
 - [Rules for the game](#rules-for-the-game)
+- [Usage](#usage)
 - [How to contribute to the project](#how-to-contribute-to-the-project) 
 - [How to generate Documentation and UML diagrams](#how-to-generate-documentation-and-uml-diagrams)
+- [Running tests and generating the test coverage report](#running-tests-and-generating-the-test-coverage-report)
 
 
 
@@ -119,7 +120,7 @@ When a player reaches five wins it is over and the score is saved in scoreboard 
 To end the game go to main menu and choose option "quit".
 
 
-## How to contribute to the project.
+## How to contribute to the project
 
 To contribute to the projectm, make different developments and functionalities you first need to request for acces to the repository owner, who is Daniel.
 
