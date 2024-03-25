@@ -21,19 +21,15 @@ class Game:
 
     def determine_winner(self, choice1, choice2):
         """Determine the winner between two choices."""
-        # Define the winning conditions
-        wins_against = {
-            'rock': ['scissors'],
-            'paper': ['rock'],
-            'scissors': ['paper'],
-
-        }
-
         if choice1 == choice2:
             return None
-
-        if choice2 in wins_against.get(choice1, []):
+        
+        elif self.switch[choice1] == choice2:
             return "Player 1"
+        
+        else:
+            return "Player 2"
+
 
     def play_pvp(self, rounds, player1, player2):
         """Play the game in player vs player mode."""
@@ -87,8 +83,7 @@ class Game:
             winner_name = player1.get_name()
         elif game.wincount < game.losecount:
             winner_name = player2.get_name()
-        else:
-            winner_name = "No one, it's a tie"
+
 
         print(f"The winner is {winner_name}!")
         print(f"\nFinal scores for both {player1.get_name()} and " +
