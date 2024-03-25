@@ -96,7 +96,8 @@ The game implemented is called Rock, paper and Scissors. It's a decision and a d
 ## Usage
 To play the Rock, Paper and Scissors game, execute the following commands in the terminal:
 ```bash
-make run
+1. cd src/rpsg
+2. python main.py (Windows), python3 main.py (Mac/Linux)
 ```
 
 The class `main.py` is the starting point for our game and where all the files are conected.
