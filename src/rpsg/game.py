@@ -19,37 +19,35 @@ class Game:
             "scissors": "paper",
         }
 
-
-
     def determine_winner(self, choice1, choice2):
         """Determine the winner between two choices."""
         # Define the winning conditions
         wins_against = {
-            'rock': ['scissors'],  
-            'paper': ['rock'],  
-            'scissors': ['paper'],  
-         
+            'rock': ['scissors'],
+            'paper': ['rock'],
+            'scissors': ['paper'],
+
         }
-    
+
         if choice1 == choice2:
             return None
 
         if choice2 in wins_against.get(choice1, []):
             return "Player 1"
 
-
-        
     def play_pvp(self, rounds, player1, player2):
         """Play the game in player vs player mode."""
-        game_stats = GameStats()
+        game = GameStats()
+        game2 = GameStats()
         time.sleep(1)
         best_of_rounds = (rounds // 2) + 1
-        print("\nWelcome to Rock, Paper, Scissors, Gun - Player vs. Player Mode!")
+        print("\nWelcome to Rock, Paper, Scissors, Gun - PvP Mode!")
         print(f"\nThe game is set for best of {best_of_rounds} rounds!")
-        
-        while (game_stats.wincount < best_of_rounds and game_stats.losecount < best_of_rounds):
-            game_stats.add_count()
-        
+
+        while (game.wincount or game.losecount) < best_of_rounds:
+            game.add_count()
+            game2.add_count()
+
         # Player 1 and Player 2 choices #
             player1.input_choice()
             if player1.get_choice() == "q":
@@ -60,38 +58,45 @@ class Game:
                 print(f"{player2.get_name()} is quitting the game...")
                 break
 
-            print(f"{player1.get_name()} chose: {player1.get_choice().capitalize()}")
-            print(f"{player2.get_name()} chose: {player2.get_choice().capitalize()}")
+            print(f"{player1.get_name()} chose: " +
+                  f"{player1.get_choice().capitalize()}")
+            print(f"{player2.get_name()} chose: " +
+                  f"{player2.get_choice().capitalize()}")
 
         # Determine and Announce Round Winner #
-            winner = self.determine_winner(player1.get_choice(), player2.get_choice())
+            winner = self.determine_winner(player1.get_choice(),
+                                           player2.get_choice())
             if winner == "Player 1":
                 print(f"{player1.get_name()} wins this round!")
-                game_stats.win()
+                game.win()
             elif winner == "Player 2":
                 print(f"{player2.get_name()} wins this round!")
-                game_stats.lose()
+                game.lose()
             else:
                 print("This round is a tie!")
-                game_stats.tie()
-            
-            if game_stats.wincount >= best_of_rounds or game_stats.losecount >= best_of_rounds:
-                self.announce_winners(game_stats, player1, player2)
+                game.tie()
+
+            if game.wincount >= best_of_rounds \
+                    or game.losecount >= best_of_rounds:
+                self.announce_winners(game, player1, player2)
                 break
 
-        game_stats.reset_stats()
+        game.reset_stats()
 
-    def announce_winners(self, game_stats, player1, player2):
-        if game_stats.wincount > game_stats.losecount:
+    def announce_winners(self, game, player1, player2):
+        """Announce the winner of the game."""
+        if game.wincount > game.losecount:
             winner_name = player1.get_name()
-        elif game_stats.wincount < game_stats.losecount:
+        elif game.wincount < game.losecount:
             winner_name = player2.get_name()
         else:
             winner_name = "No one, it's a tie"
-        
+
         print(f"The winner is {winner_name}!")
-        print(f"\nFinal scores for both {player1.get_name()} and {player2.get_name()}")
-        print(f"Wins: {game_stats.wincount} loses: {game_stats.losecount} Ties: {game_stats.tiecount}")
+        print(f"\nFinal scores for both {player1.get_name()} and " +
+              f"{player2.get_name()}")
+        print(f"Wins: {game.wincount} Losses: {game.losecount}" +
+              f"Ties: {game.tiecount}")
 
     def play(self, rounds, player):
         """Play the game."""
