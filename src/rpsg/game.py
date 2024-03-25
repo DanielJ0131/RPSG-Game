@@ -38,7 +38,6 @@ class Game:
     def play_pvp(self, rounds, player1, player2):
         """Play the game in player vs player mode."""
         game = GameStats()
-        game2 = GameStats()
         time.sleep(1)
         best_of_rounds = (rounds // 2) + 1
         print("\nWelcome to Rock, Paper, Scissors, Gun - PvP Mode!")
@@ -46,7 +45,6 @@ class Game:
 
         while (game.wincount or game.losecount) < best_of_rounds:
             game.add_count()
-            game2.add_count()
 
         # Player 1 and Player 2 choices #
             player1.input_choice()
@@ -84,7 +82,7 @@ class Game:
         game.reset_stats()
 
     def announce_winners(self, game, player1, player2):
-        """Announce the winner of the game."""
+        """Announce the winner of the pvp game."""
         if game.wincount > game.losecount:
             winner_name = player1.get_name()
         elif game.wincount < game.losecount:
