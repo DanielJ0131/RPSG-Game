@@ -10,8 +10,8 @@ This is a Python implementation of the game Rock, Paper or Scissors. This game i
 - [Installation](#Installation)
 - [Usage](#usage)
 - [Rules for the game](#rules-for-the-game)
-- [How to contribute to the project](#How-to-contribute-to-the-project) 
-- [How to generate Documentation and UML diagrams](#How-to-generate-documentation-and-UML-diagrams)
+- [How to contribute to the project](#how-to-contribute-to-the-project) 
+- [How to generate Documentation and UML diagrams](#how-to-generate-documentation-and-uml-diagrams)
 
 
 
@@ -119,10 +119,9 @@ When a player reaches five wins it is over and the score is saved in scoreboard 
 To end the game go to main menu and choose option "quit".
 
 
+## How to contribute to the project.
 
-
-
-
+To contribute to the projectm, make different developments and functionalities you first need to request for acces to the repository owner, who is Daniel.
 
 
 ## How to generate Documentation and UML diagrams
@@ -155,3 +154,17 @@ After virtuel enviroment is opened and graphviz is installed open up rpsg map is
 **Step: 4**
 1. make pyreverse
 * And now UML diagram is installed.
+
+## Running tests and generating the test coverage report
+This functionality requires to type in the command
+```bash
+make install
+```
+in our virutal environment and installed Python modules from `requirements.txt`
+
+then we can execute the command in the terminal:
+```bash
+make test
+```
+
+The results of the test coverage will be displayed on the terminal. It only displays if all the test executes successfully without errors.
