@@ -24,8 +24,8 @@ class Scoreboard:
             print("| -                      -         |")
         else:
             # Sort the stats by win count.
-            score_dict = sorted(score_dict.items(),
-                                key=lambda x: x[1], reverse=True)
+            score_dict = sorted(score_dict.items(), key=lambda x: x[1],
+                                reverse=True)
             for key, value in score_dict:
                 print(f"| {key:22} {value:<9} |")
         print(" ==================================")

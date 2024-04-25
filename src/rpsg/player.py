@@ -33,8 +33,17 @@ class Player:
     def input_choice(self):
         """Input the player's choice."""
         choice = None
-        while choice not in ["rock", "paper", "scissors", "gun",
-                             "r", "p", "s", "g", "q"]:
+        while choice not in [
+            "rock",
+            "paper",
+            "scissors",
+            "gun",
+            "r",
+            "p",
+            "s",
+            "g",
+            "q",
+        ]:
             print('\nChoose "Rock", "Paper", "Scissors" to play! (q to Exit)')
             choice = input("\nEnter your choice >>> ").lower()
         self.set_choice(choice)

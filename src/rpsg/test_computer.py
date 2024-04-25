@@ -30,8 +30,8 @@ class ComputerTest(unittest.TestCase):
     def test_medium_choice(self):
         """Test the medium_choice method."""
         self.computer.medium_choice()
-        self.assertIn(self.computer.get_choice(), ["rock", "paper",
-                                                   "scissors", "gun"])
+        self.assertIn(self.computer.get_choice(),
+                      ["rock", "paper", "scissors", "gun"])
 
     def test_easy_choice(self):
         """Test the easy_choice method."""
@@ -41,8 +41,8 @@ class ComputerTest(unittest.TestCase):
     def test_hard_choice(self):
         """Test the hard_choice method."""
         self.computer.hard_choice()
-        self.assertIn(self.computer.get_choice(), ["rock", "paper",
-                                                   "scissors", "win"])
+        self.assertIn(self.computer.get_choice(),
+                      ["rock", "paper", "scissors", "win"])
 
     def test_set_mode(self):
         """Test the set_mode method."""

@@ -22,8 +22,8 @@ def main():
             case "1":
                 game_mode = None
                 while game_mode not in ["player", "computer"]:
-                    game_mode = input('Enter mode "player" or "computer": ')\
-                        .lower()
+                    game_mode = input('Enter mode "player"' +
+                                      ' or "computer": ').lower()
                 rounds = 9
                 if game_mode == "player":
                     player1 = Player()
@@ -35,11 +35,9 @@ def main():
                     game.play_pvp(rounds, player1, player2)
                     continue
 
-                elif game_mode == "computer":
-                    player.input_name()
-
-                    Game().play(rounds, player)
-                    continue
+                player.input_name()
+                Game().play(rounds, player)
+                continue
             case "2":
                 Scoreboard().draw()
                 time.sleep(5)
