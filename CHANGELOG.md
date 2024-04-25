@@ -2,6 +2,13 @@ Changelog and revision history
 ========================
 
 
+v.2.1.0 (2024-04-24)
+------------------------
+
+* Fixes last flake8 and pylint issues
+
+
+
 v.2.0.0 (2024-03-27)
 ------------------------
 
