@@ -1,6 +1,6 @@
 Welcome to our documentation for python!
 ====
-In /Users/name/Examination2 is a Python library for those who love Rock, Paper, Scissors with a twist. 
+In /Users/name/RPSG-Game is a Python library for those who love Rock, Paper, Scissors with a twist. 
 The game includes having a gun and there is a surprise on what will happen if we chose gun or if the computer chose it. 
 There can only be a winner and it's either the computer or the user. 
 
