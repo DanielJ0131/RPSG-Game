@@ -1,6 +1,6 @@
 # Rock, Paper or Scissors game - RPSG-Game 
 
-By Ngoc Hong (Mi), Chris Lubert and Daniel Jönsson
+By Ngoc Hong, Chris Lubert and Daniel Jönsson
 
 This is a Python implementation of the game Rock, Paper or Scissors. This game is designed to play in the terminal. It's fun and entertaining.
 
