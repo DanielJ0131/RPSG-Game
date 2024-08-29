@@ -21,10 +21,10 @@ Features
 .. toctree::
 
 
-Usage: This section provides a comprehensive guide on how to utilize the Python Library "Examination2" for playing the game of Rock, Paper, Scissors with a twist.
+Usage: This section provides a comprehensive guide on how to utilize the Python Library "RPSG-Game" for playing the game of Rock, Paper, Scissors with a twist.
 
 
-API: This section outlines the Application Programming Interface "API" of Examination2, detailing the various functions, classes and methods available for developers.
+API: This section outlines the Application Programming Interface "API" of RPSG-Game, detailing the various functions, classes and methods available for developers.
 
 
 
