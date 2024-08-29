@@ -6,7 +6,7 @@ Usage
 Installation
 ------------
 
-To use Examination2, first install it using pip.
+To use RPSG-Game, first install it using pip.
 We also have an alternative, git clone:
 
 .. code-block:: console
@@ -15,8 +15,8 @@ We also have an alternative, git clone:
    pip install virtualenv
    virtualenv venv
    source venv/bin/activate
-   (.venv) $ pip install git@github.com:DanielJ0131/Examination2.git
-   (.venv) $ git clone git@github.com:DanielJ0131/Examination2.git
+   (.venv) $ pip install git@github.com:DanielJ0131/RPSG-Game.git
+   (.venv) $ git clone git@github.com:DanielJ0131/RPSG-Game.git
 
 
 Starting the Game
@@ -24,9 +24,9 @@ Starting the Game
 
 To start the Game,
 Use the cd (Change directory) command to navigate to the directory where your Python script is located.
-Like a folder called ``cd path/to/Examination2``: 
+Like a folder called ``cd path/to/RPSG-Game``: 
 
-.. autofunction:: cd Examination2
+.. autofunction:: cd RPSG-Game
 
 To Run the python script use "python main.py" to start the game. 
 
@@ -37,8 +37,8 @@ For example:
 >>> virtualenv venv
 >>> source venv/bin/activate
 
->>> pip install Examination2
->>> cd path/to/Examination2
+>>> pip install RPSG-Game
+>>> cd path/to/RPSG-Game
 >>> python main.py 
 >>> 
    ===================================
