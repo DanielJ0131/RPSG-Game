@@ -1,4 +1,4 @@
-# Rock, Paper or Scissors game - Examination2 
+# Rock, Paper or Scissors game - RPSG-Game 
 
 By Ngoc Hong (Mi), Chris Lubert and Daniel Jönsson
 
@@ -60,12 +60,12 @@ To run the Rock,Paper and Scissors game, you need to follow these steps bellow:
 ### First step:
 Clone the git repository to your local machine using the terminal provided by git Bash:
 ```bash
-git clone git@github.com:DanielJ0131/Examination2.git
+git clone git@github.com:DanielJ0131/RPSG-Game.git
 ```
 The repository and the source code contains all the Python files for executing the game. There are also other files for testing and different functionalities.
 
 ### Second step:
-Navigate to the project directory usually found in the home folder. Open a new terminal at the root folder `Examination2`.
+Navigate to the project directory usually found in the home folder. Open a new terminal at the root folder `RPSG-Game`.
 
 ### Third step:
 Vitual enviroment needs to be created nad activated by running these commands:
@@ -134,7 +134,7 @@ To contribute to the projectm, make different developments and functionalities y
 **Follow these steps below!**
 
 **Step: 1** Installing venv
-1. Open Directory in Terminal, write (cd Examination2)
+1. Open Directory in Terminal, write (cd RPSG-Game)
 2. Create the virtual environment with help of our given
 3. Makefile. In the Terminal, write (python3 -m venv .venv) and (make venv)
 4. Activate the venv, write for Windows (. .venv/Scripts/activate) and for Mac/Linux (. .venv/bin/activate)
@@ -147,11 +147,11 @@ Install the dot command to help generating the UML pictures from source code str
 2. dot -V (to check what version, optional!)
 
 **Step: 3**
-After virtuel enviroment is opened and graphviz is installed open up rpsg map is necessary in Examination2.
-1. cd Examination2 (if not already opened)
+After virtuel enviroment is opened and graphviz is installed open up rpsg map is necessary in RPSG-Game.
+1. cd RPSG-Game (if not already opened)
 2. cd src
 3. cd rpsg
-* Should look something like this in the terminal ~/Examination2/src/rpsg
+* Should look something like this in the terminal ~/RPSG-Game/src/rpsg
 
 **Step: 4**
 1. make pyreverse
