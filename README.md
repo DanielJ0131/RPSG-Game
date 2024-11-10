@@ -1,4 +1,5 @@
-# Rock, Paper, Scissors, Gun game - RPSG-Game 
+# Rock, Paper, Scissors, Gun game 
+# RPSG-Game 
 
 By Ngoc Hong, Chris Lubert and Daniel Jönsson
 
